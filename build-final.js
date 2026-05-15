@@ -195,30 +195,51 @@ yesterday
 
 }
 
-const songs =
+const songsData =
 load(
-"data/song.json"
+"data/song.json",
+{}
 );
+
+const artistsData =
+load(
+"data/artist.json",
+{}
+);
+
+const albumsData =
+load(
+"data/album.json",
+{}
+);
+
+const songs =
+songsData.entries
+?? [];
 
 const artists =
-load(
-"data/artist.json"
-);
+artistsData.entries
+?? [];
 
 const albums =
-load(
-"data/album.json"
-);
+albumsData.entries
+?? [];
 
 const yesterdaySongs =
 load(
-"data/history/yesterday-song.json"
-);
+"data/history/yesterday-song.json",
+{}
+)
+?.entries
+?? [];
 
 const yesterdayArtists =
 load(
-"data/history/yesterday-artist.json"
-);
+"data/history/yesterday-artist.json",
+{}
+)
+?.entries
+?? [];
 
 const enhancedSongs =
 buildSong(
@@ -238,12 +259,9 @@ const final = {
 
     weeklyLastUpdate:
 
-    albums.find(
-      x =>
-      x.type ===
-      "weekly"
-    )
-    ?.date
+    albumsData
+    ?.weeklyLastUpdate
+
     ??
 
     null,
@@ -262,24 +280,18 @@ const final = {
 
     dailyLastUpdate:
 
-    artists.find(
-      x =>
-      x.type ===
-      "daily"
-    )
-    ?.date
+    artistsData
+    ?.dailyLastUpdate
+
     ??
 
     null,
 
     weeklyLastUpdate:
 
-    artists.find(
-      x =>
-      x.type ===
-      "weekly"
-    )
-    ?.date
+    artistsData
+    ?.weeklyLastUpdate
+
     ??
 
     null,
@@ -306,24 +318,18 @@ const final = {
 
     dailyLastUpdate:
 
-    songs.find(
-      x =>
-      x.type ===
-      "daily"
-    )
-    ?.date
+    songsData
+    ?.dailyLastUpdate
+
     ??
 
     null,
 
     weeklyLastUpdate:
 
-    songs.find(
-      x =>
-      x.type ===
-      "weekly"
-    )
-    ?.date
+    songsData
+    ?.weeklyLastUpdate
+
     ??
 
     null,
@@ -363,4 +369,3 @@ JSON.stringify(
 console.log(
 "final.json updated 😍"
 );
-
