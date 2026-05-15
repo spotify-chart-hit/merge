@@ -1,23 +1,37 @@
 const fs = require("fs");
 
-function load(file, fallback = []) {
-  try {
+function load(
+file,
+fallback = []
+) {
 
-    if (!fs.existsSync(file)) {
-      return fallback;
-    }
+try {
 
-    return JSON.parse(
-      fs.readFileSync(file, "utf8")
-    );
+if (
+!fs.existsSync(file)
+) {
 
-  }
+return fallback;
 
-  catch {
+}
 
-    return fallback;
+return JSON.parse(
 
-  }
+fs.readFileSync(
+file,
+"utf8"
+)
+
+);
+
+}
+
+catch {
+
+return fallback;
+
+}
+
 }
 
 function getRankChange(
@@ -25,46 +39,53 @@ current,
 previous
 ) {
 
-  if (
-    previous === undefined
-    ||
-    previous === null
-  ) {
+if (
 
-    return {
-      change: 0,
-      direction: "new"
-    };
+previous === undefined
+||
+previous === null
 
-  }
+) {
 
-  const diff =
-  previous - current;
+return {
+change: 0,
+direction: "new"
+};
 
-  if (diff > 0) {
+}
 
-    return {
-      change: diff,
-      direction: "up"
-    };
+const diff =
+previous - current;
 
-  }
+if (
+diff > 0
+) {
 
-  if (diff < 0) {
+return {
+change: diff,
+direction: "up"
+};
 
-    return {
-      change:
-      Math.abs(diff),
-      direction:
-      "down"
-    };
+}
 
-  }
+if (
+diff < 0
+) {
 
-  return {
-    change: 0,
-    direction: "same"
-  };
+return {
+change:
+Math.abs(diff),
+
+direction:
+"down"
+};
+
+}
+
+return {
+change: 0,
+direction: "same"
+};
 
 }
 
@@ -73,68 +94,79 @@ today,
 yesterday
 ) {
 
-  const yesterdayMap =
-  new Map();
+const yesterdayMap =
+new Map();
 
-  for (
-    const item
-    of yesterday
-  ) {
+for (
+const item
+of yesterday
+) {
 
-    const key =
-    `${item.country}-${item.type}-${item.track}`;
+const key =
 
-    yesterdayMap.set(
-      key,
-      item
-    );
+`${item.country}-${item.type}-${item.track}`;
 
-  }
+yesterdayMap.set(
+key,
+item
+);
 
-  return today.map(item => {
+}
 
-    const key =
-    `${item.country}-${item.type}-${item.track}`;
+return today.map(
+item => {
 
-    const old =
-    yesterdayMap.get(key);
+const key =
 
-    const rank =
-    getRankChange(
-      item.rank,
-      old?.rank
-    );
+`${item.country}-${item.type}-${item.track}`;
 
-    const previousStreams =
-    old?.streams
-    ?? 0;
+const old =
+yesterdayMap.get(
+key
+);
 
-    const streamChange =
-    (item.streams ?? 0)
-    -
-    previousStreams;
+const rank =
+getRankChange(
 
-    return {
+item.rank,
+old?.rank
 
-      ...item,
+);
 
-      previousRank:
-      old?.rank
-      ?? null,
+const previousStreams =
 
-      rankChange:
-      rank.change,
+old?.streams
+?? 0;
 
-      direction:
-      rank.direction,
+const streamChange =
 
-      previousStreams,
+(item.streams ?? 0)
+-
+previousStreams;
 
-      streamChange
+return {
 
-    };
+...item,
 
-  });
+previousRank:
+
+old?.rank
+?? null,
+
+rankChange:
+rank.change,
+
+direction:
+rank.direction,
+
+previousStreams,
+
+streamChange
+
+};
+
+}
+);
 
 }
 
@@ -143,55 +175,64 @@ today,
 yesterday
 ) {
 
-  const yesterdayMap =
-  new Map();
+const yesterdayMap =
+new Map();
 
-  for (
-    const item
-    of yesterday
-  ) {
+for (
+const item
+of yesterday
+) {
 
-    const key =
-    `${item.country}-${item.type}-${item.artist}`;
+const key =
 
-    yesterdayMap.set(
-      key,
-      item
-    );
+`${item.country}-${item.type}-${item.artist}`;
 
-  }
+yesterdayMap.set(
+key,
+item
+);
 
-  return today.map(item => {
+}
 
-    const key =
-    `${item.country}-${item.type}-${item.artist}`;
+return today.map(
+item => {
 
-    const old =
-    yesterdayMap.get(key);
+const key =
 
-    const rank =
-    getRankChange(
-      item.rank,
-      old?.rank
-    );
+`${item.country}-${item.type}-${item.artist}`;
 
-    return {
+const old =
+yesterdayMap.get(
+key
+);
 
-      ...item,
+const rank =
+getRankChange(
 
-      previousRank:
-      old?.rank
-      ?? null,
+item.rank,
+old?.rank
 
-      rankChange:
-      rank.change,
+);
 
-      direction:
-      rank.direction
+return {
 
-    };
+...item,
 
-  });
+previousRank:
+
+old?.rank
+?? null,
+
+rankChange:
+rank.change,
+
+direction:
+rank.direction
+
+};
+
+}
+);
 
 }
 
@@ -214,30 +255,94 @@ load(
 );
 
 const songs =
-songsData.entries
+
+Array.isArray(
+songsData
+)
+
+?
+
+songsData
+
+:
+
+songsData
+?.entries
 ?? [];
 
 const artists =
-artistsData.entries
+
+Array.isArray(
+artistsData
+)
+
+?
+
+artistsData
+
+:
+
+artistsData
+?.entries
 ?? [];
 
 const albums =
-albumsData.entries
+
+Array.isArray(
+albumsData
+)
+
+?
+
+albumsData
+
+:
+
+albumsData
+?.entries
 ?? [];
 
-const yesterdaySongs =
+const yesterdaySongsData =
 load(
 "data/history/yesterday-song.json",
 {}
+);
+
+const yesterdayArtistsData =
+load(
+"data/history/yesterday-artist.json",
+{}
+);
+
+const yesterdaySongs =
+
+Array.isArray(
+yesterdaySongsData
 )
+
+?
+
+yesterdaySongsData
+
+:
+
+yesterdaySongsData
 ?.entries
 ?? [];
 
 const yesterdayArtists =
-load(
-"data/history/yesterday-artist.json",
-{}
+
+Array.isArray(
+yesterdayArtistsData
 )
+
+?
+
+yesterdayArtistsData
+
+:
+
+yesterdayArtistsData
 ?.entries
 ?? [];
 
@@ -255,102 +360,112 @@ yesterdayArtists
 
 const final = {
 
-  album: {
+album: {
 
-    weeklyLastUpdate:
+weeklyLastUpdate:
 
-    albumsData
-    ?.weeklyLastUpdate
+albumsData
+?.weeklyLastUpdate
 
-    ??
+??
 
-    null,
+null,
 
-    weekly:
+weekly:
 
-    albums.filter(
-      x =>
-      x.type ===
-      "weekly"
-    )
+albums.filter(
+x =>
 
-  },
+x.type ===
+"weekly"
 
-  artist: {
+)
 
-    dailyLastUpdate:
+},
 
-    artistsData
-    ?.dailyLastUpdate
+artist: {
 
-    ??
+dailyLastUpdate:
 
-    null,
+artistsData
+?.dailyLastUpdate
 
-    weeklyLastUpdate:
+??
 
-    artistsData
-    ?.weeklyLastUpdate
+null,
 
-    ??
+weeklyLastUpdate:
 
-    null,
+artistsData
+?.weeklyLastUpdate
 
-    daily:
+??
 
-    enhancedArtists.filter(
-      x =>
-      x.type ===
-      "daily"
-    ),
+null,
 
-    weekly:
+daily:
 
-    enhancedArtists.filter(
-      x =>
-      x.type ===
-      "weekly"
-    )
+enhancedArtists.filter(
+x =>
 
-  },
+x.type ===
+"daily"
 
-  song: {
+),
 
-    dailyLastUpdate:
+weekly:
 
-    songsData
-    ?.dailyLastUpdate
+enhancedArtists.filter(
+x =>
 
-    ??
+x.type ===
+"weekly"
 
-    null,
+)
 
-    weeklyLastUpdate:
+},
 
-    songsData
-    ?.weeklyLastUpdate
+song: {
 
-    ??
+dailyLastUpdate:
 
-    null,
+songsData
+?.dailyLastUpdate
 
-    daily:
+??
 
-    enhancedSongs.filter(
-      x =>
-      x.type ===
-      "daily"
-    ),
+null,
 
-    weekly:
+weeklyLastUpdate:
 
-    enhancedSongs.filter(
-      x =>
-      x.type ===
-      "weekly"
-    )
+songsData
+?.weeklyLastUpdate
 
-  }
+??
+
+null,
+
+daily:
+
+enhancedSongs.filter(
+x =>
+
+x.type ===
+"daily"
+
+),
+
+weekly:
+
+enhancedSongs.filter(
+x =>
+
+x.type ===
+"weekly"
+
+)
+
+}
 
 };
 
@@ -359,9 +474,9 @@ fs.writeFileSync(
 "final.json",
 
 JSON.stringify(
-  final,
-  null,
-  2
+final,
+null,
+2
 )
 
 );
