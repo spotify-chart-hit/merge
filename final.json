@@ -1,6 +1,6 @@
 {
   "album": {
-    "weeklyLastUpdate": null,
+    "weeklyLastUpdate": "2026-05-07",
     "weekly": [
       {
         "country": "BY",
@@ -135,164 +135,164 @@
     ]
   },
   "artist": {
-    "dailyLastUpdate": null,
-    "weeklyLastUpdate": null,
+    "dailyLastUpdate": "2026-05-13",
+    "weeklyLastUpdate": "2026-05-07",
     "daily": [
       {
         "country": "BG",
         "type": "daily",
         "rank": 61,
-        "previousRank": null,
+        "previousRank": 61,
         "peakRank": 1,
         "appearances": 941,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 4,
-        "previousRank": null,
+        "previousRank": 4,
         "peakRank": 1,
         "appearances": 828,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "CL",
         "type": "daily",
         "rank": 100,
-        "previousRank": null,
+        "previousRank": 100,
         "peakRank": 29,
         "appearances": 857,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "CR",
         "type": "daily",
         "rank": 187,
-        "previousRank": null,
+        "previousRank": 187,
         "peakRank": 40,
         "appearances": 758,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "JP",
         "type": "daily",
         "rank": 78,
-        "previousRank": null,
+        "previousRank": 78,
         "peakRank": 13,
         "appearances": 1169,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "KR",
         "type": "daily",
         "rank": 13,
-        "previousRank": null,
+        "previousRank": 13,
         "peakRank": 1,
         "appearances": 1376,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "LV",
         "type": "daily",
         "rank": 30,
-        "previousRank": null,
+        "previousRank": 30,
         "peakRank": 1,
         "appearances": 696,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "PH",
         "type": "daily",
         "rank": 188,
-        "previousRank": null,
+        "previousRank": 188,
         "peakRank": 13,
         "appearances": 959,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "SA",
         "type": "daily",
         "rank": 168,
-        "previousRank": null,
+        "previousRank": 168,
         "peakRank": 1,
         "appearances": 1162,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "SG",
         "type": "daily",
         "rank": 44,
-        "previousRank": null,
+        "previousRank": 44,
         "peakRank": 2,
         "appearances": 1206,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "TH",
         "type": "daily",
         "rank": 126,
-        "previousRank": null,
+        "previousRank": 126,
         "peakRank": 1,
         "appearances": 1255,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "TW",
         "type": "daily",
         "rank": 79,
-        "previousRank": null,
+        "previousRank": 79,
         "peakRank": 4,
         "appearances": 1178,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "VE",
         "type": "daily",
         "rank": 44,
-        "previousRank": null,
+        "previousRank": 44,
         "peakRank": 44,
         "appearances": 1,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       }
     ],
     "weekly": [
@@ -300,181 +300,181 @@
         "country": "BG",
         "type": "weekly",
         "rank": 35,
-        "previousRank": null,
+        "previousRank": 35,
         "peakRank": 2,
         "appearances": 139,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 5,
-        "previousRank": null,
+        "previousRank": 5,
         "peakRank": 1,
         "appearances": 115,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "CL",
         "type": "weekly",
         "rank": 83,
-        "previousRank": null,
+        "previousRank": 83,
         "peakRank": 33,
         "appearances": 122,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "CR",
         "type": "weekly",
         "rank": 189,
-        "previousRank": null,
+        "previousRank": 189,
         "peakRank": 49,
         "appearances": 113,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "JP",
         "type": "weekly",
         "rank": 72,
-        "previousRank": null,
+        "previousRank": 72,
         "peakRank": 18,
         "appearances": 167,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "KR",
         "type": "weekly",
         "rank": 10,
-        "previousRank": null,
+        "previousRank": 10,
         "peakRank": 1,
         "appearances": 196,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "LV",
         "type": "weekly",
         "rank": 38,
-        "previousRank": null,
+        "previousRank": 38,
         "peakRank": 2,
         "appearances": 100,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "PH",
         "type": "weekly",
         "rank": 196,
-        "previousRank": null,
+        "previousRank": 196,
         "peakRank": 23,
         "appearances": 141,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "PY",
         "type": "weekly",
         "rank": 155,
-        "previousRank": null,
+        "previousRank": 155,
         "peakRank": 14,
         "appearances": 138,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "SA",
         "type": "weekly",
         "rank": 160,
-        "previousRank": null,
+        "previousRank": 160,
         "peakRank": 3,
         "appearances": 168,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "SG",
         "type": "weekly",
         "rank": 32,
-        "previousRank": null,
+        "previousRank": 32,
         "peakRank": 4,
         "appearances": 172,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "TH",
         "type": "weekly",
         "rank": 98,
-        "previousRank": null,
+        "previousRank": 98,
         "peakRank": 1,
         "appearances": 179,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "TW",
         "type": "weekly",
         "rank": 76,
-        "previousRank": null,
+        "previousRank": 76,
         "peakRank": 6,
         "appearances": 168,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       },
       {
         "country": "VE",
         "type": "weekly",
         "rank": 49,
-        "previousRank": null,
+        "previousRank": 49,
         "peakRank": 4,
         "appearances": 166,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "new"
+        "direction": "same"
       }
     ]
   },
   "song": {
-    "dailyLastUpdate": null,
-    "weeklyLastUpdate": null,
+    "dailyLastUpdate": "2026-05-13",
+    "weeklyLastUpdate": "2026-05-07",
     "daily": [
       {
         "country": "BG",
         "type": "daily",
         "rank": 7,
-        "previousRank": null,
+        "previousRank": 7,
         "peakRank": 1,
         "appearances": 663,
         "streams": "6881",
@@ -484,15 +484,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 6881
+        "direction": "same",
+        "previousStreams": "6881",
+        "streamChange": 0
       },
       {
         "country": "BG",
         "type": "daily",
         "rank": 84,
-        "previousRank": null,
+        "previousRank": 84,
         "peakRank": 2,
         "appearances": 516,
         "streams": "3312",
@@ -502,15 +502,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 3312
+        "direction": "same",
+        "previousStreams": "3312",
+        "streamChange": 0
       },
       {
         "country": "BG",
         "type": "daily",
         "rank": 110,
-        "previousRank": null,
+        "previousRank": 110,
         "peakRank": 12,
         "appearances": 260,
         "streams": "2957",
@@ -520,15 +520,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e024f4ec2c2a865569bd4a067a4",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 2957
+        "direction": "same",
+        "previousStreams": "2957",
+        "streamChange": 0
       },
       {
         "country": "BO",
         "type": "daily",
         "rank": 108,
-        "previousRank": null,
+        "previousRank": 108,
         "peakRank": 1,
         "appearances": 655,
         "streams": "6295",
@@ -538,15 +538,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 6295
+        "direction": "same",
+        "previousStreams": "6295",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 2,
-        "previousRank": null,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 664,
         "streams": "14532",
@@ -556,15 +556,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 14532
+        "direction": "same",
+        "previousStreams": "14532",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 4,
-        "previousRank": null,
+        "previousRank": 4,
         "peakRank": 2,
         "appearances": 664,
         "streams": "7868",
@@ -574,15 +574,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 7868
+        "direction": "same",
+        "previousStreams": "7868",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 14,
-        "previousRank": null,
+        "previousRank": 14,
         "peakRank": 4,
         "appearances": 469,
         "streams": "3632",
@@ -592,15 +592,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 3632
+        "direction": "same",
+        "previousStreams": "3632",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 16,
-        "previousRank": null,
+        "previousRank": 16,
         "peakRank": 3,
         "appearances": 631,
         "streams": "3438",
@@ -610,15 +610,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 3438
+        "direction": "same",
+        "previousStreams": "3438",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 90,
-        "previousRank": null,
+        "previousRank": 90,
         "peakRank": 3,
         "appearances": 508,
         "streams": "1834",
@@ -628,15 +628,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 1834
+        "direction": "same",
+        "previousStreams": "1834",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 104,
-        "previousRank": null,
+        "previousRank": 104,
         "peakRank": 5,
         "appearances": 419,
         "streams": "1767",
@@ -647,15 +647,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 1767
+        "direction": "same",
+        "previousStreams": "1767",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 142,
-        "previousRank": null,
+        "previousRank": 142,
         "peakRank": 5,
         "appearances": 470,
         "streams": "1570",
@@ -665,15 +665,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e0282601539d4a27061ad90eacb",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 1570
+        "direction": "same",
+        "previousStreams": "1570",
+        "streamChange": 0
       },
       {
         "country": "CL",
         "type": "daily",
         "rank": 1,
-        "previousRank": null,
+        "previousRank": 1,
         "peakRank": 1,
         "appearances": 664,
         "streams": "209527",
@@ -683,15 +683,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 209527
+        "direction": "same",
+        "previousStreams": "209527",
+        "streamChange": 0
       },
       {
         "country": "CR",
         "type": "daily",
         "rank": 9,
-        "previousRank": null,
+        "previousRank": 9,
         "peakRank": 1,
         "appearances": 664,
         "streams": "22544",
@@ -701,15 +701,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 22544
+        "direction": "same",
+        "previousStreams": "22544",
+        "streamChange": 0
       },
       {
         "country": "GLOBAL",
         "type": "daily",
         "rank": 135,
-        "previousRank": null,
+        "previousRank": 135,
         "peakRank": 1,
         "appearances": 664,
         "streams": "1460227",
@@ -719,15 +719,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 1460227
+        "direction": "same",
+        "previousStreams": "1460227",
+        "streamChange": 0
       },
       {
         "country": "JP",
         "type": "daily",
         "rank": 28,
-        "previousRank": null,
+        "previousRank": 28,
         "peakRank": 1,
         "appearances": 664,
         "streams": "160693",
@@ -737,15 +737,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 160693
+        "direction": "same",
+        "previousStreams": "160693",
+        "streamChange": 0
       },
       {
         "country": "KR",
         "type": "daily",
         "rank": 6,
-        "previousRank": null,
+        "previousRank": 6,
         "peakRank": 1,
         "appearances": 664,
         "streams": "58446",
@@ -755,15 +755,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 58446
+        "direction": "same",
+        "previousStreams": "58446",
+        "streamChange": 0
       },
       {
         "country": "KR",
         "type": "daily",
         "rank": 54,
-        "previousRank": null,
+        "previousRank": 54,
         "peakRank": 2,
         "appearances": 650,
         "streams": "21008",
@@ -773,15 +773,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 21008
+        "direction": "same",
+        "previousStreams": "21008",
+        "streamChange": 0
       },
       {
         "country": "KR",
         "type": "daily",
         "rank": 163,
-        "previousRank": null,
+        "previousRank": 163,
         "peakRank": 1,
         "appearances": 1100,
         "streams": "13489",
@@ -791,15 +791,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 13489
+        "direction": "same",
+        "previousStreams": "13489",
+        "streamChange": 0
       },
       {
         "country": "LV",
         "type": "daily",
         "rank": 3,
-        "previousRank": null,
+        "previousRank": 3,
         "peakRank": 1,
         "appearances": 661,
         "streams": "8427",
@@ -809,15 +809,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 8427
+        "direction": "same",
+        "previousStreams": "8427",
+        "streamChange": 0
       },
       {
         "country": "LV",
         "type": "daily",
         "rank": 4,
-        "previousRank": null,
+        "previousRank": 4,
         "peakRank": 2,
         "appearances": 619,
         "streams": "6228",
@@ -827,15 +827,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 6228
+        "direction": "same",
+        "previousStreams": "6228",
+        "streamChange": 0
       },
       {
         "country": "LV",
         "type": "daily",
         "rank": 188,
-        "previousRank": null,
+        "previousRank": 188,
         "peakRank": 5,
         "appearances": 34,
         "streams": "1543",
@@ -845,15 +845,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 1543
+        "direction": "same",
+        "previousStreams": "1543",
+        "streamChange": 0
       },
       {
         "country": "PH",
         "type": "daily",
         "rank": 121,
-        "previousRank": null,
+        "previousRank": 121,
         "peakRank": 12,
         "appearances": 595,
         "streams": "137898",
@@ -863,15 +863,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 137898
+        "direction": "same",
+        "previousStreams": "137898",
+        "streamChange": 0
       },
       {
         "country": "PY",
         "type": "daily",
         "rank": 47,
-        "previousRank": null,
+        "previousRank": 47,
         "peakRank": 1,
         "appearances": 636,
         "streams": "8392",
@@ -881,15 +881,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 8392
+        "direction": "same",
+        "previousStreams": "8392",
+        "streamChange": 0
       },
       {
         "country": "SA",
         "type": "daily",
         "rank": 172,
-        "previousRank": null,
+        "previousRank": 172,
         "peakRank": 1,
         "appearances": 619,
         "streams": "3837",
@@ -899,15 +899,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 3837
+        "direction": "same",
+        "previousStreams": "3837",
+        "streamChange": 0
       },
       {
         "country": "SG",
         "type": "daily",
         "rank": 2,
-        "previousRank": null,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 664,
         "streams": "49176",
@@ -917,15 +917,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 49176
+        "direction": "same",
+        "previousStreams": "49176",
+        "streamChange": 0
       },
       {
         "country": "SV",
         "type": "daily",
         "rank": 146,
-        "previousRank": null,
+        "previousRank": 146,
         "peakRank": 1,
         "appearances": 643,
         "streams": "6427",
@@ -935,15 +935,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 6427
+        "direction": "same",
+        "previousStreams": "6427",
+        "streamChange": 0
       },
       {
         "country": "TH",
         "type": "daily",
         "rank": 40,
-        "previousRank": null,
+        "previousRank": 40,
         "peakRank": 1,
         "appearances": 664,
         "streams": "73113",
@@ -953,15 +953,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 73113
+        "direction": "same",
+        "previousStreams": "73113",
+        "streamChange": 0
       },
       {
         "country": "TW",
         "type": "daily",
         "rank": 5,
-        "previousRank": null,
+        "previousRank": 5,
         "peakRank": 1,
         "appearances": 664,
         "streams": "55117",
@@ -971,15 +971,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 55117
+        "direction": "same",
+        "previousStreams": "55117",
+        "streamChange": 0
       },
       {
         "country": "UA",
         "type": "daily",
         "rank": 159,
-        "previousRank": null,
+        "previousRank": 159,
         "peakRank": 13,
         "appearances": 649,
         "streams": "5750",
@@ -989,15 +989,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 5750
+        "direction": "same",
+        "previousStreams": "5750",
+        "streamChange": 0
       },
       {
         "country": "UY",
         "type": "daily",
         "rank": 32,
-        "previousRank": null,
+        "previousRank": 32,
         "peakRank": 10,
         "appearances": 545,
         "streams": "6865",
@@ -1007,15 +1007,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 6865
+        "direction": "same",
+        "previousStreams": "6865",
+        "streamChange": 0
       },
       {
         "country": "VE",
         "type": "daily",
         "rank": 2,
-        "previousRank": null,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 664,
         "streams": "49834",
@@ -1025,15 +1025,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 49834
+        "direction": "same",
+        "previousStreams": "49834",
+        "streamChange": 0
       },
       {
         "country": "VE",
         "type": "daily",
         "rank": 34,
-        "previousRank": null,
+        "previousRank": 34,
         "peakRank": 3,
         "appearances": 167,
         "streams": "12965",
@@ -1043,9 +1043,9 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 12965
+        "direction": "same",
+        "previousStreams": "12965",
+        "streamChange": 0
       }
     ],
     "weekly": [
@@ -1053,7 +1053,7 @@
         "country": "BG",
         "type": "weekly",
         "rank": 3,
-        "previousRank": null,
+        "previousRank": 3,
         "peakRank": 1,
         "appearances": 94,
         "streams": "57373",
@@ -1063,15 +1063,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 57373
+        "direction": "same",
+        "previousStreams": "57373",
+        "streamChange": 0
       },
       {
         "country": "BG",
         "type": "weekly",
         "rank": 45,
-        "previousRank": null,
+        "previousRank": 45,
         "peakRank": 2,
         "appearances": 79,
         "streams": "27213",
@@ -1081,15 +1081,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 27213
+        "direction": "same",
+        "previousStreams": "27213",
+        "streamChange": 0
       },
       {
         "country": "BG",
         "type": "weekly",
         "rank": 62,
-        "previousRank": null,
+        "previousRank": 62,
         "peakRank": 32,
         "appearances": 35,
         "streams": "24285",
@@ -1099,15 +1099,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e024f4ec2c2a865569bd4a067a4",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 24285
+        "direction": "same",
+        "previousStreams": "24285",
+        "streamChange": 0
       },
       {
         "country": "BG",
         "type": "weekly",
         "rank": 63,
-        "previousRank": null,
+        "previousRank": 63,
         "peakRank": 6,
         "appearances": 75,
         "streams": "24261",
@@ -1117,15 +1117,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 24261
+        "direction": "same",
+        "previousStreams": "24261",
+        "streamChange": 0
       },
       {
         "country": "BO",
         "type": "weekly",
         "rank": 177,
-        "previousRank": null,
+        "previousRank": 177,
         "peakRank": 1,
         "appearances": 94,
         "streams": "34942",
@@ -1135,15 +1135,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 34942
+        "direction": "same",
+        "previousStreams": "34942",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 2,
-        "previousRank": null,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 94,
         "streams": "82217",
@@ -1153,15 +1153,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 82217
+        "direction": "same",
+        "previousStreams": "82217",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 5,
-        "previousRank": null,
+        "previousRank": 5,
         "peakRank": 2,
         "appearances": 94,
         "streams": "49793",
@@ -1171,15 +1171,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 49793
+        "direction": "same",
+        "previousStreams": "49793",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 25,
-        "previousRank": null,
+        "previousRank": 25,
         "peakRank": 5,
         "appearances": 89,
         "streams": "21695",
@@ -1189,15 +1189,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 21695
+        "direction": "same",
+        "previousStreams": "21695",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 45,
-        "previousRank": null,
+        "previousRank": 45,
         "peakRank": 6,
         "appearances": 68,
         "streams": "18707",
@@ -1207,15 +1207,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 18707
+        "direction": "same",
+        "previousStreams": "18707",
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 171,
-        "previousRank": null,
+        "previousRank": 171,
         "peakRank": 4,
         "appearances": 72,
         "streams": "10642",
@@ -1225,15 +1225,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 10642
+        "direction": "same",
+        "previousStreams": "10642",
+        "streamChange": 0
       },
       {
         "country": "CL",
         "type": "weekly",
         "rank": 2,
-        "previousRank": null,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 94,
         "streams": "1369263",
@@ -1243,15 +1243,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 1369263
+        "direction": "same",
+        "previousStreams": "1369263",
+        "streamChange": 0
       },
       {
         "country": "CL",
         "type": "weekly",
         "rank": 69,
-        "previousRank": null,
+        "previousRank": 69,
         "peakRank": 26,
         "appearances": 80,
         "streams": "314941",
@@ -1261,15 +1261,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 314941
+        "direction": "same",
+        "previousStreams": "314941",
+        "streamChange": 0
       },
       {
         "country": "CR",
         "type": "weekly",
         "rank": 9,
-        "previousRank": null,
+        "previousRank": 9,
         "peakRank": 2,
         "appearances": 94,
         "streams": "148898",
@@ -1279,15 +1279,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 148898
+        "direction": "same",
+        "previousStreams": "148898",
+        "streamChange": 0
       },
       {
         "country": "GLOBAL",
         "type": "weekly",
         "rank": 128,
-        "previousRank": null,
+        "previousRank": 128,
         "peakRank": 1,
         "appearances": 94,
         "streams": "10357050",
@@ -1297,15 +1297,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 10357050
+        "direction": "same",
+        "previousStreams": "10357050",
+        "streamChange": 0
       },
       {
         "country": "JP",
         "type": "weekly",
         "rank": 29,
-        "previousRank": null,
+        "previousRank": 29,
         "peakRank": 1,
         "appearances": 94,
         "streams": "1166495",
@@ -1315,15 +1315,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 1166495
+        "direction": "same",
+        "previousStreams": "1166495",
+        "streamChange": 0
       },
       {
         "country": "KR",
         "type": "weekly",
         "rank": 3,
-        "previousRank": null,
+        "previousRank": 3,
         "peakRank": 1,
         "appearances": 94,
         "streams": "482868",
@@ -1333,15 +1333,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 482868
+        "direction": "same",
+        "previousStreams": "482868",
+        "streamChange": 0
       },
       {
         "country": "KR",
         "type": "weekly",
         "rank": 45,
-        "previousRank": null,
+        "previousRank": 45,
         "peakRank": 2,
         "appearances": 93,
         "streams": "152059",
@@ -1351,15 +1351,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 152059
+        "direction": "same",
+        "previousStreams": "152059",
+        "streamChange": 0
       },
       {
         "country": "KR",
         "type": "weekly",
         "rank": 159,
-        "previousRank": null,
+        "previousRank": 159,
         "peakRank": 1,
         "appearances": 157,
         "streams": "93401",
@@ -1369,15 +1369,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 93401
+        "direction": "same",
+        "previousStreams": "93401",
+        "streamChange": 0
       },
       {
         "country": "LV",
         "type": "weekly",
         "rank": 2,
-        "previousRank": null,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 94,
         "streams": "61719",
@@ -1387,15 +1387,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 61719
+        "direction": "same",
+        "previousStreams": "61719",
+        "streamChange": 0
       },
       {
         "country": "LV",
         "type": "weekly",
         "rank": 5,
-        "previousRank": null,
+        "previousRank": 5,
         "peakRank": 2,
         "appearances": 90,
         "streams": "39592",
@@ -1405,15 +1405,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 39592
+        "direction": "same",
+        "previousStreams": "39592",
+        "streamChange": 0
       },
       {
         "country": "PH",
         "type": "weekly",
         "rank": 143,
-        "previousRank": null,
+        "previousRank": 143,
         "peakRank": 16,
         "appearances": 89,
         "streams": "918699",
@@ -1423,15 +1423,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 918699
+        "direction": "same",
+        "previousStreams": "918699",
+        "streamChange": 0
       },
       {
         "country": "PY",
         "type": "weekly",
         "rank": 8,
-        "previousRank": null,
+        "previousRank": 8,
         "peakRank": 1,
         "appearances": 91,
         "streams": "100076",
@@ -1441,15 +1441,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 100076
+        "direction": "same",
+        "previousStreams": "100076",
+        "streamChange": 0
       },
       {
         "country": "SA",
         "type": "weekly",
         "rank": 189,
-        "previousRank": null,
+        "previousRank": 189,
         "peakRank": 1,
         "appearances": 91,
         "streams": "24386",
@@ -1459,15 +1459,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 24386
+        "direction": "same",
+        "previousStreams": "24386",
+        "streamChange": 0
       },
       {
         "country": "SG",
         "type": "weekly",
         "rank": 2,
-        "previousRank": null,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 94,
         "streams": "378583",
@@ -1477,15 +1477,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 378583
+        "direction": "same",
+        "previousStreams": "378583",
+        "streamChange": 0
       },
       {
         "country": "SV",
         "type": "weekly",
         "rank": 39,
-        "previousRank": null,
+        "previousRank": 39,
         "peakRank": 1,
         "appearances": 94,
         "streams": "71781",
@@ -1495,15 +1495,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 71781
+        "direction": "same",
+        "previousStreams": "71781",
+        "streamChange": 0
       },
       {
         "country": "TH",
         "type": "weekly",
         "rank": 13,
-        "previousRank": null,
+        "previousRank": 13,
         "peakRank": 1,
         "appearances": 94,
         "streams": "683214",
@@ -1513,15 +1513,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 683214
+        "direction": "same",
+        "previousStreams": "683214",
+        "streamChange": 0
       },
       {
         "country": "TW",
         "type": "weekly",
         "rank": 3,
-        "previousRank": null,
+        "previousRank": 3,
         "peakRank": 1,
         "appearances": 94,
         "streams": "396790",
@@ -1531,15 +1531,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 396790
+        "direction": "same",
+        "previousStreams": "396790",
+        "streamChange": 0
       },
       {
         "country": "UA",
         "type": "weekly",
         "rank": 187,
-        "previousRank": null,
+        "previousRank": 187,
         "peakRank": 16,
         "appearances": 94,
         "streams": "38313",
@@ -1549,15 +1549,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 38313
+        "direction": "same",
+        "previousStreams": "38313",
+        "streamChange": 0
       },
       {
         "country": "UY",
         "type": "weekly",
         "rank": 42,
-        "previousRank": null,
+        "previousRank": 42,
         "peakRank": 15,
         "appearances": 80,
         "streams": "44992",
@@ -1567,15 +1567,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 44992
+        "direction": "same",
+        "previousStreams": "44992",
+        "streamChange": 0
       },
       {
         "country": "VE",
         "type": "weekly",
         "rank": 2,
-        "previousRank": null,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 94,
         "streams": "319648",
@@ -1585,15 +1585,15 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 319648
+        "direction": "same",
+        "previousStreams": "319648",
+        "streamChange": 0
       },
       {
         "country": "VE",
         "type": "weekly",
         "rank": 38,
-        "previousRank": null,
+        "previousRank": 38,
         "peakRank": 3,
         "appearances": 20,
         "streams": "83357",
@@ -1603,9 +1603,9 @@
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
-        "direction": "new",
-        "previousStreams": 0,
-        "streamChange": 83357
+        "direction": "same",
+        "previousStreams": "83357",
+        "streamChange": 0
       }
     ]
   }
