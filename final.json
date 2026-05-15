@@ -13,7 +13,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 0,
+        "direction": "same",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "CL",
@@ -26,7 +30,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 4,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "JP",
@@ -39,7 +47,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 3,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "PH",
@@ -52,7 +64,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 6,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "SG",
@@ -65,7 +81,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 1,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "TH",
@@ -78,7 +98,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 1,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "TW",
@@ -91,7 +115,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 1,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "UA",
@@ -104,7 +132,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 8,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "VE",
@@ -117,7 +149,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 1,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "VN",
@@ -130,7 +166,11 @@
         "artists": [
           "Jimin"
         ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 16,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       }
     ]
   },
@@ -142,145 +182,169 @@
         "country": "BG",
         "type": "daily",
         "rank": 55,
-        "previousRank": 55,
+        "previousRank": 61,
         "peakRank": 1,
         "appearances": 942,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 6,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 6,
-        "previousRank": 6,
+        "previousRank": 4,
         "peakRank": 1,
         "appearances": 829,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "CL",
         "type": "daily",
         "rank": 92,
-        "previousRank": 92,
+        "previousRank": 100,
         "peakRank": 29,
         "appearances": 858,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 8,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "JP",
         "type": "daily",
         "rank": 73,
-        "previousRank": 73,
+        "previousRank": 78,
         "peakRank": 13,
         "appearances": 1170,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 5,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "KR",
         "type": "daily",
         "rank": 15,
-        "previousRank": 15,
+        "previousRank": 13,
         "peakRank": 1,
         "appearances": 1377,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "LV",
         "type": "daily",
         "rank": 32,
-        "previousRank": 32,
+        "previousRank": 30,
         "peakRank": 1,
         "appearances": 697,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "PH",
         "type": "daily",
         "rank": 197,
-        "previousRank": 197,
+        "previousRank": 188,
         "peakRank": 13,
         "appearances": 960,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 9,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "SA",
         "type": "daily",
         "rank": 186,
-        "previousRank": 186,
+        "previousRank": 168,
         "peakRank": 1,
         "appearances": 1163,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 18,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "SG",
         "type": "daily",
         "rank": 38,
-        "previousRank": 38,
+        "previousRank": 44,
         "peakRank": 2,
         "appearances": 1207,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 6,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "TH",
         "type": "daily",
         "rank": 99,
-        "previousRank": 99,
+        "previousRank": 126,
         "peakRank": 1,
         "appearances": 1256,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 27,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "TW",
         "type": "daily",
         "rank": 78,
-        "previousRank": 78,
+        "previousRank": 79,
         "peakRank": 4,
         "appearances": 1179,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 1,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "VE",
         "type": "daily",
         "rank": 43,
-        "previousRank": 43,
+        "previousRank": -1,
         "peakRank": 43,
         "appearances": 1,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 44,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       }
     ],
     "weekly": [
@@ -288,25 +352,29 @@
         "country": "BG",
         "type": "weekly",
         "rank": 57,
-        "previousRank": 57,
+        "previousRank": 35,
         "peakRank": 2,
         "appearances": 140,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 22,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "BO",
         "type": "weekly",
         "rank": 199,
-        "previousRank": 199,
+        "previousRank": -1,
         "peakRank": 11,
         "appearances": 145,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 200,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -318,43 +386,51 @@
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "same"
+        "direction": "same",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "CL",
         "type": "weekly",
         "rank": 101,
-        "previousRank": 101,
+        "previousRank": 83,
         "peakRank": 33,
         "appearances": 123,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 18,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "CR",
         "type": "weekly",
         "rank": 198,
-        "previousRank": 198,
+        "previousRank": 189,
         "peakRank": 49,
         "appearances": 114,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 9,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "JP",
         "type": "weekly",
         "rank": 73,
-        "previousRank": 73,
+        "previousRank": 72,
         "peakRank": 18,
         "appearances": 168,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 1,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "KR",
@@ -366,79 +442,93 @@
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
         "rankChange": 0,
-        "direction": "same"
+        "direction": "same",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "LV",
         "type": "weekly",
         "rank": 29,
-        "previousRank": 29,
+        "previousRank": 38,
         "peakRank": 2,
         "appearances": 101,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 9,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "SA",
         "type": "weekly",
         "rank": 163,
-        "previousRank": 163,
+        "previousRank": 160,
         "peakRank": 3,
         "appearances": 169,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 3,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "SG",
         "type": "weekly",
         "rank": 36,
-        "previousRank": 36,
+        "previousRank": 32,
         "peakRank": 4,
         "appearances": 173,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 4,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "TH",
         "type": "weekly",
         "rank": 104,
-        "previousRank": 104,
+        "previousRank": 98,
         "peakRank": 1,
         "appearances": 180,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 6,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "TW",
         "type": "weekly",
         "rank": 78,
-        "previousRank": 78,
+        "previousRank": 76,
         "peakRank": 6,
         "appearances": 169,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 0
       },
       {
         "country": "VE",
         "type": "weekly",
         "rank": 43,
-        "previousRank": 43,
+        "previousRank": 49,
         "peakRank": 4,
         "appearances": 167,
         "artist": "Jimin",
         "image": "https://i.scdn.co/image/ab67616100005174cf3a9c35db52ba44f3b921e3",
-        "rankChange": 0,
-        "direction": "same"
+        "rankChange": 6,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 0
       }
     ]
   },
@@ -450,7 +540,7 @@
         "country": "BG",
         "type": "daily",
         "rank": 9,
-        "previousRank": 9,
+        "previousRank": 7,
         "peakRank": 1,
         "appearances": 664,
         "streams": "6750",
@@ -459,16 +549,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "6750",
-        "streamChange": 0
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 6750
       },
       {
         "country": "BG",
         "type": "daily",
         "rank": 119,
-        "previousRank": 119,
+        "previousRank": -1,
         "peakRank": 5,
         "appearances": 504,
         "streams": "2977",
@@ -477,16 +567,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "2977",
-        "streamChange": 0
+        "rankChange": 120,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 2977
       },
       {
         "country": "BG",
         "type": "daily",
         "rank": 135,
-        "previousRank": 135,
+        "previousRank": 110,
         "peakRank": 12,
         "appearances": 261,
         "streams": "2834",
@@ -495,16 +585,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e024f4ec2c2a865569bd4a067a4",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "2834",
-        "streamChange": 0
+        "rankChange": 25,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 2834
       },
       {
         "country": "BO",
         "type": "daily",
         "rank": 93,
-        "previousRank": 93,
+        "previousRank": 108,
         "peakRank": 1,
         "appearances": 656,
         "streams": "6590",
@@ -513,10 +603,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "6590",
-        "streamChange": 0
+        "rankChange": 15,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 6590
       },
       {
         "country": "BY",
@@ -533,14 +623,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "10299",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 10299
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 5,
-        "previousRank": 5,
+        "previousRank": 4,
         "peakRank": 2,
         "appearances": 665,
         "streams": "7267",
@@ -549,16 +639,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "7267",
-        "streamChange": 0
+        "rankChange": 1,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 7267
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 30,
-        "previousRank": 30,
+        "previousRank": 16,
         "peakRank": 3,
         "appearances": 632,
         "streams": "2818",
@@ -567,16 +657,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "2818",
-        "streamChange": 0
+        "rankChange": 14,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 2818
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 37,
-        "previousRank": 37,
+        "previousRank": 14,
         "peakRank": 4,
         "appearances": 470,
         "streams": "2708",
@@ -585,16 +675,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "2708",
-        "streamChange": 0
+        "rankChange": 23,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 2708
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 73,
-        "previousRank": 73,
+        "previousRank": 90,
         "peakRank": 3,
         "appearances": 509,
         "streams": "2044",
@@ -603,16 +693,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "2044",
-        "streamChange": 0
+        "rankChange": 17,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 2044
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 100,
-        "previousRank": 100,
+        "previousRank": 142,
         "peakRank": 5,
         "appearances": 471,
         "streams": "1817",
@@ -621,16 +711,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e0282601539d4a27061ad90eacb",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "1817",
-        "streamChange": 0
+        "rankChange": 42,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 1817
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 106,
-        "previousRank": 106,
+        "previousRank": 104,
         "peakRank": 5,
         "appearances": 420,
         "streams": "1775",
@@ -640,16 +730,16 @@
           "Sofia Carson"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "1775",
-        "streamChange": 0
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 1775
       },
       {
         "country": "BY",
         "type": "daily",
         "rank": 120,
-        "previousRank": 120,
+        "previousRank": -1,
         "peakRank": 8,
         "appearances": 408,
         "streams": "1678",
@@ -658,10 +748,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "1678",
-        "streamChange": 0
+        "rankChange": 121,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 1678
       },
       {
         "country": "CL",
@@ -678,14 +768,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "225595",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 225595
       },
       {
         "country": "CR",
         "type": "daily",
         "rank": 19,
-        "previousRank": 19,
+        "previousRank": 9,
         "peakRank": 1,
         "appearances": 665,
         "streams": "16949",
@@ -694,16 +784,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "16949",
-        "streamChange": 0
+        "rankChange": 10,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 16949
       },
       {
         "country": "GLOBAL",
         "type": "daily",
         "rank": 127,
-        "previousRank": 127,
+        "previousRank": 135,
         "peakRank": 1,
         "appearances": 665,
         "streams": "1490300",
@@ -712,16 +802,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "1490300",
-        "streamChange": 0
+        "rankChange": 8,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 1490300
       },
       {
         "country": "JP",
         "type": "daily",
         "rank": 23,
-        "previousRank": 23,
+        "previousRank": 28,
         "peakRank": 1,
         "appearances": 665,
         "streams": "169591",
@@ -730,16 +820,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "169591",
-        "streamChange": 0
+        "rankChange": 5,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 169591
       },
       {
         "country": "KR",
         "type": "daily",
         "rank": 7,
-        "previousRank": 7,
+        "previousRank": 6,
         "peakRank": 1,
         "appearances": 665,
         "streams": "53987",
@@ -748,16 +838,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "53987",
-        "streamChange": 0
+        "rankChange": 1,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 53987
       },
       {
         "country": "KR",
         "type": "daily",
         "rank": 73,
-        "previousRank": 73,
+        "previousRank": 54,
         "peakRank": 2,
         "appearances": 651,
         "streams": "18074",
@@ -766,10 +856,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "18074",
-        "streamChange": 0
+        "rankChange": 19,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 18074
       },
       {
         "country": "LV",
@@ -786,14 +876,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "9481",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 9481
       },
       {
         "country": "LV",
         "type": "daily",
         "rank": 6,
-        "previousRank": 6,
+        "previousRank": 4,
         "peakRank": 2,
         "appearances": 620,
         "streams": "6685",
@@ -802,16 +892,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "6685",
-        "streamChange": 0
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 6685
       },
       {
         "country": "PH",
         "type": "daily",
         "rank": 123,
-        "previousRank": 123,
+        "previousRank": 121,
         "peakRank": 12,
         "appearances": 596,
         "streams": "135277",
@@ -820,16 +910,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "135277",
-        "streamChange": 0
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 135277
       },
       {
         "country": "PY",
         "type": "daily",
         "rank": 89,
-        "previousRank": 89,
+        "previousRank": 47,
         "peakRank": 1,
         "appearances": 637,
         "streams": "5962",
@@ -838,10 +928,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "5962",
-        "streamChange": 0
+        "rankChange": 42,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 5962
       },
       {
         "country": "SG",
@@ -858,14 +948,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "53513",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 53513
       },
       {
         "country": "SV",
         "type": "daily",
         "rank": 64,
-        "previousRank": 64,
+        "previousRank": 146,
         "peakRank": 1,
         "appearances": 644,
         "streams": "9039",
@@ -874,16 +964,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "9039",
-        "streamChange": 0
+        "rankChange": 82,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 9039
       },
       {
         "country": "TH",
         "type": "daily",
         "rank": 16,
-        "previousRank": 16,
+        "previousRank": 40,
         "peakRank": 1,
         "appearances": 665,
         "streams": "100532",
@@ -892,10 +982,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "100532",
-        "streamChange": 0
+        "rankChange": 24,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 100532
       },
       {
         "country": "TW",
@@ -912,14 +1002,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "56041",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 56041
       },
       {
         "country": "UA",
         "type": "daily",
         "rank": 150,
-        "previousRank": 150,
+        "previousRank": 159,
         "peakRank": 13,
         "appearances": 650,
         "streams": "5869",
@@ -928,16 +1018,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "5869",
-        "streamChange": 0
+        "rankChange": 9,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 5869
       },
       {
         "country": "UY",
         "type": "daily",
         "rank": 28,
-        "previousRank": 28,
+        "previousRank": 32,
         "peakRank": 10,
         "appearances": 546,
         "streams": "7193",
@@ -946,10 +1036,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "7193",
-        "streamChange": 0
+        "rankChange": 4,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 7193
       },
       {
         "country": "VE",
@@ -966,14 +1056,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "53469",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 53469
       },
       {
         "country": "VE",
         "type": "daily",
         "rank": 42,
-        "previousRank": 42,
+        "previousRank": 34,
         "peakRank": 3,
         "appearances": 168,
         "streams": "11099",
@@ -982,10 +1072,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "11099",
-        "streamChange": 0
+        "rankChange": 8,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 11099
       }
     ],
     "weekly": [
@@ -993,7 +1083,7 @@
         "country": "BG",
         "type": "weekly",
         "rank": 6,
-        "previousRank": 6,
+        "previousRank": 3,
         "peakRank": 1,
         "appearances": 95,
         "streams": "50188",
@@ -1002,16 +1092,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "50188",
-        "streamChange": 0
+        "rankChange": 3,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 50188
       },
       {
         "country": "BG",
         "type": "weekly",
         "rank": 96,
-        "previousRank": 96,
+        "previousRank": 62,
         "peakRank": 32,
         "appearances": 36,
         "streams": "21219",
@@ -1020,16 +1110,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e024f4ec2c2a865569bd4a067a4",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "21219",
-        "streamChange": 0
+        "rankChange": 34,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 21219
       },
       {
         "country": "BG",
         "type": "weekly",
         "rank": 104,
-        "previousRank": 104,
+        "previousRank": 63,
         "peakRank": 6,
         "appearances": 76,
         "streams": "20807",
@@ -1038,16 +1128,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "20807",
-        "streamChange": 0
+        "rankChange": 41,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 20807
       },
       {
         "country": "BG",
         "type": "weekly",
         "rank": 122,
-        "previousRank": 122,
+        "previousRank": 45,
         "peakRank": 2,
         "appearances": 80,
         "streams": "19680",
@@ -1056,16 +1146,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "19680",
-        "streamChange": 0
+        "rankChange": 77,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 19680
       },
       {
         "country": "BO",
         "type": "weekly",
         "rank": 91,
-        "previousRank": 91,
+        "previousRank": 177,
         "peakRank": 1,
         "appearances": 95,
         "streams": "44457",
@@ -1074,10 +1164,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "44457",
-        "streamChange": 0
+        "rankChange": 86,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 44457
       },
       {
         "country": "BY",
@@ -1094,14 +1184,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "82954",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 82954
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 4,
-        "previousRank": 4,
+        "previousRank": 5,
         "peakRank": 2,
         "appearances": 95,
         "streams": "50307",
@@ -1110,16 +1200,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "50307",
-        "streamChange": 0
+        "rankChange": 1,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 50307
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 19,
-        "previousRank": 19,
+        "previousRank": 25,
         "peakRank": 5,
         "appearances": 90,
         "streams": "22429",
@@ -1128,16 +1218,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "22429",
-        "streamChange": 0
+        "rankChange": 6,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 22429
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 27,
-        "previousRank": 27,
+        "previousRank": 45,
         "peakRank": 6,
         "appearances": 69,
         "streams": "20551",
@@ -1146,16 +1236,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "20551",
-        "streamChange": 0
+        "rankChange": 18,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 20551
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 122,
-        "previousRank": 122,
+        "previousRank": 171,
         "peakRank": 4,
         "appearances": 73,
         "streams": "11543",
@@ -1164,16 +1254,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "11543",
-        "streamChange": 0
+        "rankChange": 49,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 11543
       },
       {
         "country": "BY",
         "type": "weekly",
         "rank": 158,
-        "previousRank": 158,
+        "previousRank": -1,
         "peakRank": 7,
         "appearances": 65,
         "streams": "10633",
@@ -1183,16 +1273,16 @@
           "Sofia Carson"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "10633",
-        "streamChange": 0
+        "rankChange": 159,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 10633
       },
       {
         "country": "CL",
         "type": "weekly",
         "rank": 1,
-        "previousRank": 1,
+        "previousRank": 2,
         "peakRank": 1,
         "appearances": 95,
         "streams": "1468394",
@@ -1201,16 +1291,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "1468394",
-        "streamChange": 0
+        "rankChange": 1,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 1468394
       },
       {
         "country": "CR",
         "type": "weekly",
         "rank": 11,
-        "previousRank": 11,
+        "previousRank": 9,
         "peakRank": 2,
         "appearances": 95,
         "streams": "145434",
@@ -1219,16 +1309,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "145434",
-        "streamChange": 0
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 145434
       },
       {
         "country": "GLOBAL",
         "type": "weekly",
         "rank": 130,
-        "previousRank": 130,
+        "previousRank": 128,
         "peakRank": 1,
         "appearances": 95,
         "streams": "10255004",
@@ -1237,16 +1327,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "10255004",
-        "streamChange": 0
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 10255004
       },
       {
         "country": "JP",
         "type": "weekly",
         "rank": 27,
-        "previousRank": 27,
+        "previousRank": 29,
         "peakRank": 1,
         "appearances": 95,
         "streams": "1156462",
@@ -1255,16 +1345,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "1156462",
-        "streamChange": 0
+        "rankChange": 2,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 1156462
       },
       {
         "country": "KR",
         "type": "weekly",
         "rank": 4,
-        "previousRank": 4,
+        "previousRank": 3,
         "peakRank": 1,
         "appearances": 95,
         "streams": "453175",
@@ -1273,16 +1363,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "453175",
-        "streamChange": 0
+        "rankChange": 1,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 453175
       },
       {
         "country": "KR",
         "type": "weekly",
         "rank": 49,
-        "previousRank": 49,
+        "previousRank": 45,
         "peakRank": 2,
         "appearances": 94,
         "streams": "156044",
@@ -1291,16 +1381,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "156044",
-        "streamChange": 0
+        "rankChange": 4,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 156044
       },
       {
         "country": "KR",
         "type": "weekly",
         "rank": 151,
-        "previousRank": 151,
+        "previousRank": 159,
         "peakRank": 1,
         "appearances": 158,
         "streams": "94669",
@@ -1309,10 +1399,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "94669",
-        "streamChange": 0
+        "rankChange": 8,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 94669
       },
       {
         "country": "LV",
@@ -1329,8 +1419,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "63623",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 63623
       },
       {
         "country": "LV",
@@ -1347,14 +1437,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "45375",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 45375
       },
       {
         "country": "PH",
         "type": "weekly",
         "rank": 130,
-        "previousRank": 130,
+        "previousRank": 143,
         "peakRank": 16,
         "appearances": 90,
         "streams": "929819",
@@ -1363,16 +1453,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "929819",
-        "streamChange": 0
+        "rankChange": 13,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 929819
       },
       {
         "country": "PY",
         "type": "weekly",
         "rank": 27,
-        "previousRank": 27,
+        "previousRank": 8,
         "peakRank": 1,
         "appearances": 92,
         "streams": "66510",
@@ -1381,16 +1471,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "66510",
-        "streamChange": 0
+        "rankChange": 19,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 66510
       },
       {
         "country": "SA",
         "type": "weekly",
         "rank": 159,
-        "previousRank": 159,
+        "previousRank": 189,
         "peakRank": 1,
         "appearances": 92,
         "streams": "26256",
@@ -1399,10 +1489,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "26256",
-        "streamChange": 0
+        "rankChange": 30,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 26256
       },
       {
         "country": "SG",
@@ -1419,14 +1509,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "372195",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 372195
       },
       {
         "country": "SV",
         "type": "weekly",
         "rank": 120,
-        "previousRank": 120,
+        "previousRank": 39,
         "peakRank": 1,
         "appearances": 95,
         "streams": "48382",
@@ -1435,16 +1525,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "48382",
-        "streamChange": 0
+        "rankChange": 81,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 48382
       },
       {
         "country": "TH",
         "type": "weekly",
         "rank": 16,
-        "previousRank": 16,
+        "previousRank": 13,
         "peakRank": 1,
         "appearances": 95,
         "streams": "668510",
@@ -1453,16 +1543,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "668510",
-        "streamChange": 0
+        "rankChange": 3,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 668510
       },
       {
         "country": "TW",
         "type": "weekly",
         "rank": 5,
-        "previousRank": 5,
+        "previousRank": 3,
         "peakRank": 1,
         "appearances": 95,
         "streams": "386750",
@@ -1471,16 +1561,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "386750",
-        "streamChange": 0
+        "rankChange": 2,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 386750
       },
       {
         "country": "UA",
         "type": "weekly",
         "rank": 166,
-        "previousRank": 166,
+        "previousRank": 187,
         "peakRank": 16,
         "appearances": 95,
         "streams": "40038",
@@ -1489,16 +1579,16 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "40038",
-        "streamChange": 0
+        "rankChange": 21,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 40038
       },
       {
         "country": "UY",
         "type": "weekly",
         "rank": 31,
-        "previousRank": 31,
+        "previousRank": 42,
         "peakRank": 15,
         "appearances": 81,
         "streams": "49671",
@@ -1507,10 +1597,10 @@
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "49671",
-        "streamChange": 0
+        "rankChange": 11,
+        "direction": "up",
+        "previousStreams": 0,
+        "streamChange": 49671
       },
       {
         "country": "VE",
@@ -1527,14 +1617,14 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": "377265",
-        "streamChange": 0
+        "previousStreams": 0,
+        "streamChange": 377265
       },
       {
         "country": "VE",
         "type": "weekly",
         "rank": 161,
-        "previousRank": 161,
+        "previousRank": -1,
         "peakRank": 20,
         "appearances": 24,
         "streams": "42063",
@@ -1544,10 +1634,10 @@
           "Sofia Carson"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "previousStreams": "42063",
-        "streamChange": 0
+        "rankChange": 162,
+        "direction": "down",
+        "previousStreams": 0,
+        "streamChange": 42063
       }
     ]
   }
