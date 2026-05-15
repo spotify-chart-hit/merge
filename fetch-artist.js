@@ -72,7 +72,7 @@ chartResponse.status !== 200
 ) {
 
 throw new Error(
-`Failed artist chart date 😭 ${chartResponse.status}`
+`Failed chart date 😭 ${chartResponse.status}`
 );
 
 }
@@ -95,13 +95,61 @@ fs.existsSync(
 
 ) {
 
-fs.copyFileSync(
+const oldData =
+JSON.parse(
 
+fs.readFileSync(
 "data/artist.json",
-
-"data/history/yesterday-artist.json"
+"utf8"
+)
 
 );
+
+if (
+
+oldData.dailyLastUpdate
+!==
+
+chartDate.daily
+
+) {
+
+fs.writeFileSync(
+
+"data/history/yesterday-daily-artist.json",
+
+JSON.stringify(
+oldData,
+null,
+2
+)
+
+);
+
+}
+
+if (
+
+oldData.weeklyLastUpdate
+!==
+
+chartDate.weekly
+
+) {
+
+fs.writeFileSync(
+
+"data/history/previous-weekly-artist.json",
+
+JSON.stringify(
+oldData,
+null,
+2
+)
+
+);
+
+}
 
 }
 
