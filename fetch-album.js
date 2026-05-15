@@ -48,6 +48,38 @@ throw new Error(
 const data =
 await response.json();
 
+const chartResponse =
+await fetch(
+
+`https://api.github.com/repos/${OWNER}/${REPO}/contents/chart-album-americas.json`,
+
+{
+headers: {
+Authorization:
+`token ${TOKEN}`,
+
+Accept:
+"application/vnd.github.v3.raw"
+}
+}
+
+);
+
+if (
+
+chartResponse.status !== 200
+
+) {
+
+throw new Error(
+`Failed album chart date 😭 ${chartResponse.status}`
+);
+
+}
+
+const chartDate =
+await chartResponse.json();
+
 fs.mkdirSync(
 "data/history",
 {
@@ -77,8 +109,15 @@ fs.writeFileSync(
 
 "data/album.json",
 
-JSON.stringify(
-data,
+JSON.stringify({
+
+weeklyLastUpdate:
+chartDate.weekly,
+
+entries:
+data
+
+},
 null,
 2
 )
@@ -102,4 +141,3 @@ err.message
 }
 
 fetchAlbum();
-
