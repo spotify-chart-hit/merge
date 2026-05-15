@@ -95,13 +95,61 @@ fs.existsSync(
 
 ) {
 
-fs.copyFileSync(
+const oldData =
+JSON.parse(
 
+fs.readFileSync(
 "data/song.json",
-
-"data/history/yesterday-song.json"
+"utf8"
+)
 
 );
+
+if (
+
+oldData.dailyLastUpdate
+!==
+
+chartDate.daily
+
+) {
+
+fs.writeFileSync(
+
+"data/history/yesterday-daily-song.json",
+
+JSON.stringify(
+oldData,
+null,
+2
+)
+
+);
+
+}
+
+if (
+
+oldData.weeklyLastUpdate
+!==
+
+chartDate.weekly
+
+) {
+
+fs.writeFileSync(
+
+"data/history/previous-weekly-song.json",
+
+JSON.stringify(
+oldData,
+null,
+2
+)
+
+);
+
+}
 
 }
 
