@@ -1,1 +1,12 @@
+{
+  "name": "merge",
+  "version": "1.0.0",
+  "main": "build-final.js",
+  "scripts": {
+    "regional": "node fetch-regional.js",
+    "album": "node fetch-album.js",
+    "artist": "node fetch-artist.js",
+    "build": "node build-final.js"
+  }
+}
 
