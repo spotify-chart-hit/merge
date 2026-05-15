@@ -1,494 +1,135 @@
-const fs = require("fs");
-
-function load(
-file,
-fallback = []
-) {
-
-try {
-
-if (
-!fs.existsSync(file)
-) {
-
-return fallback;
-
+{
+  "weeklyLastUpdate": "2026-05-14",
+  "entries": [
+    {
+      "country": "BY",
+      "type": "weekly",
+      "rank": 2,
+      "previousRank": 2,
+      "peakRank": 1,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "CL",
+      "type": "weekly",
+      "rank": 10,
+      "previousRank": 14,
+      "peakRank": 5,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "JP",
+      "type": "weekly",
+      "rank": 25,
+      "previousRank": 28,
+      "peakRank": 3,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "PH",
+      "type": "weekly",
+      "rank": 119,
+      "previousRank": 125,
+      "peakRank": 8,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "SG",
+      "type": "weekly",
+      "rank": 7,
+      "previousRank": 6,
+      "peakRank": 1,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "TH",
+      "type": "weekly",
+      "rank": 35,
+      "previousRank": 36,
+      "peakRank": 1,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "TW",
+      "type": "weekly",
+      "rank": 15,
+      "previousRank": 16,
+      "peakRank": 1,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "UA",
+      "type": "weekly",
+      "rank": 148,
+      "previousRank": 156,
+      "peakRank": 9,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "VE",
+      "type": "weekly",
+      "rank": 8,
+      "previousRank": 9,
+      "peakRank": 1,
+      "appearances": 95,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    },
+    {
+      "country": "VN",
+      "type": "weekly",
+      "rank": 124,
+      "previousRank": 108,
+      "peakRank": 1,
+      "appearances": 94,
+      "album": "MUSE",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec"
+    }
+  ]
 }
-
-return JSON.parse(
-
-fs.readFileSync(
-file,
-"utf8"
-)
-
-);
-
-}
-
-catch {
-
-return fallback;
-
-}
-
-}
-
-function getRankChange(
-current,
-previous
-) {
-
-if (
-
-previous === undefined
-||
-previous === null
-
-) {
-
-return {
-change: 0,
-direction: "new"
-};
-
-}
-
-const diff =
-previous - current;
-
-if (
-diff > 0
-) {
-
-return {
-change: diff,
-direction: "up"
-};
-
-}
-
-if (
-diff < 0
-) {
-
-return {
-change:
-Math.abs(diff),
-
-direction:
-"down"
-};
-
-}
-
-return {
-change: 0,
-direction: "same"
-};
-
-}
-
-function buildSong(
-today,
-yesterday
-) {
-
-const yesterdayMap =
-new Map();
-
-for (
-const item
-of yesterday
-) {
-
-const key =
-
-`${item.country}-${item.type}-${item.track}`;
-
-yesterdayMap.set(
-key,
-item
-);
-
-}
-
-return today.map(
-item => {
-
-const key =
-
-`${item.country}-${item.type}-${item.track}`;
-
-const old =
-yesterdayMap.get(
-key
-);
-
-const rank =
-getRankChange(
-
-item.rank,
-item.previousRank
-
-);
-
-const previousStreams =
-
-Number(
-old?.streams
-?? 0
-);
-
-const currentStreams =
-
-Number(
-item.streams
-?? 0
-);
-
-const streamChange =
-
-currentStreams
--
-previousStreams;
-
-return {
-
-...item,
-
-rankChange:
-rank.change,
-
-direction:
-rank.direction,
-
-previousStreams,
-
-streamChange
-
-};
-
-}
-);
-
-}
-
-function buildArtist(
-today,
-yesterday
-) {
-
-const yesterdayMap =
-new Map();
-
-for (
-const item
-of yesterday
-) {
-
-const key =
-
-`${item.country}-${item.type}-${item.artist}`;
-
-yesterdayMap.set(
-key,
-item
-);
-
-}
-
-return today.map(
-item => {
-
-const rank =
-getRankChange(
-
-item.rank,
-item.previousRank
-
-);
-
-return {
-
-...item,
-
-rankChange:
-rank.change,
-
-direction:
-rank.direction
-
-};
-
-}
-);
-
-}
-
-const songsData =
-load(
-"data/song.json",
-{}
-);
-
-const artistsData =
-load(
-"data/artist.json",
-{}
-);
-
-const albumsData =
-load(
-"data/album.json",
-{}
-);
-
-const songs =
-
-Array.isArray(
-songsData
-)
-
-?
-
-songsData
-
-:
-
-songsData
-?.entries
-?? [];
-
-const artists =
-
-Array.isArray(
-artistsData
-)
-
-?
-
-artistsData
-
-:
-
-artistsData
-?.entries
-?? [];
-
-const albums =
-
-Array.isArray(
-albumsData
-)
-
-?
-
-albumsData
-
-:
-
-albumsData
-?.entries
-?? [];
-
-const yesterdaySongsData =
-load(
-"data/history/yesterday-song.json",
-{}
-);
-
-const yesterdayArtistsData =
-load(
-"data/history/yesterday-artist.json",
-{}
-);
-
-const yesterdaySongs =
-
-Array.isArray(
-yesterdaySongsData
-)
-
-?
-
-yesterdaySongsData
-
-:
-
-yesterdaySongsData
-?.entries
-?? [];
-
-const yesterdayArtists =
-
-Array.isArray(
-yesterdayArtistsData
-)
-
-?
-
-yesterdayArtistsData
-
-:
-
-yesterdayArtistsData
-?.entries
-?? [];
-
-const enhancedSongs =
-buildSong(
-songs,
-yesterdaySongs
-);
-
-const enhancedArtists =
-buildArtist(
-artists,
-yesterdayArtists
-);
-
-const final = {
-
-album: {
-
-weeklyLastUpdate:
-
-albumsData
-?.weeklyLastUpdate
-
-??
-
-null,
-
-weekly:
-
-albums.map(
-item => {
-
-const rank =
-getRankChange(
-
-item.rank,
-item.previousRank
-
-);
-
-return {
-
-...item,
-
-rankChange:
-rank.change,
-
-direction:
-rank.direction
-
-};
-
-}
-)
-
-},
-
-artist: {
-
-dailyLastUpdate:
-
-artistsData
-?.dailyLastUpdate
-
-??
-
-null,
-
-weeklyLastUpdate:
-
-artistsData
-?.weeklyLastUpdate
-
-??
-
-null,
-
-daily:
-
-enhancedArtists.filter(
-x =>
-
-x.type ===
-"daily"
-
-),
-
-weekly:
-
-enhancedArtists.filter(
-x =>
-
-x.type ===
-"weekly"
-
-)
-
-},
-
-song: {
-
-dailyLastUpdate:
-
-songsData
-?.dailyLastUpdate
-
-??
-
-null,
-
-weeklyLastUpdate:
-
-songsData
-?.weeklyLastUpdate
-
-??
-
-null,
-
-daily:
-
-enhancedSongs.filter(
-x =>
-
-x.type ===
-"daily"
-
-),
-
-weekly:
-
-enhancedSongs.filter(
-x =>
-
-x.type ===
-"weekly"
-
-)
-
-}
-
-};
-
-fs.writeFileSync(
-
-"final.json",
-
-JSON.stringify(
-final,
-null,
-2
-)
-
-);
-
-console.log(
-"final.json updated 😍"
-);
