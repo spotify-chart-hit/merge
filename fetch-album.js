@@ -72,7 +72,7 @@ chartResponse.status !== 200
 ) {
 
 throw new Error(
-`Failed album chart date 😭 ${chartResponse.status}`
+`Failed chart date 😭 ${chartResponse.status}`
 );
 
 }
@@ -95,13 +95,38 @@ fs.existsSync(
 
 ) {
 
-fs.copyFileSync(
+const oldData =
+JSON.parse(
 
+fs.readFileSync(
 "data/album.json",
-
-"data/history/yesterday-album.json"
+"utf8"
+)
 
 );
+
+if (
+
+oldData.weeklyLastUpdate
+!==
+
+chartDate.weekly
+
+) {
+
+fs.writeFileSync(
+
+"data/history/previous-weekly-album.json",
+
+JSON.stringify(
+oldData,
+null,
+2
+)
+
+);
+
+}
 
 }
 
