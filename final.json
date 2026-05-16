@@ -547,7 +547,7 @@
     ]
   },
   "song": {
-    "dailyLastUpdate": "2026-05-14",
+    "dailyLastUpdate": "2026-05-15",
     "weeklyLastUpdate": "2026-05-14",
     "daily": [
       {
@@ -565,8 +565,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 2,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 6750
+        "previousStreams": 6750,
+        "streamChange": 0
       },
       {
         "country": "BG",
@@ -583,8 +583,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 120,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 2977
+        "previousStreams": 2977,
+        "streamChange": 0
       },
       {
         "country": "BG",
@@ -601,8 +601,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e024f4ec2c2a865569bd4a067a4",
         "rankChange": 25,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 2834
+        "previousStreams": 2834,
+        "streamChange": 0
       },
       {
         "country": "BO",
@@ -619,8 +619,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 15,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 6590
+        "previousStreams": 6590,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -637,8 +637,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": 0,
-        "streamChange": 10299
+        "previousStreams": 10299,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -655,8 +655,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 1,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 7267
+        "previousStreams": 7267,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -673,8 +673,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
         "rankChange": 14,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 2818
+        "previousStreams": 2818,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -691,8 +691,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 23,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 2708
+        "previousStreams": 2708,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -709,8 +709,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
         "rankChange": 17,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 2044
+        "previousStreams": 2044,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -727,8 +727,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e0282601539d4a27061ad90eacb",
         "rankChange": 42,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 1817
+        "previousStreams": 1817,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -746,8 +746,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 2,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 1775
+        "previousStreams": 1775,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -764,8 +764,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f150d9f2e5e8148e5032fd7d",
         "rankChange": 121,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 1678
+        "previousStreams": 1678,
+        "streamChange": 0
       },
       {
         "country": "CL",
@@ -782,8 +782,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": 0,
-        "streamChange": 225595
+        "previousStreams": 225595,
+        "streamChange": 0
       },
       {
         "country": "CR",
@@ -800,8 +800,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 10,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 16949
+        "previousStreams": 16949,
+        "streamChange": 0
       },
       {
         "country": "GLOBAL",
@@ -818,8 +818,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 8,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 1490300
+        "previousStreams": 1490300,
+        "streamChange": 0
       },
       {
         "country": "JP",
@@ -836,8 +836,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 5,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 169591
+        "previousStreams": 169591,
+        "streamChange": 0
       },
       {
         "country": "KR",
@@ -854,8 +854,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 1,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 53987
+        "previousStreams": 53987,
+        "streamChange": 0
       },
       {
         "country": "KR",
@@ -872,8 +872,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 19,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 18074
+        "previousStreams": 18074,
+        "streamChange": 0
       },
       {
         "country": "LV",
@@ -890,8 +890,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": 0,
-        "streamChange": 9481
+        "previousStreams": 9481,
+        "streamChange": 0
       },
       {
         "country": "LV",
@@ -908,8 +908,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 2,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 6685
+        "previousStreams": 6685,
+        "streamChange": 0
       },
       {
         "country": "PH",
@@ -926,8 +926,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 2,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 135277
+        "previousStreams": 135277,
+        "streamChange": 0
       },
       {
         "country": "PY",
@@ -944,8 +944,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 42,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 5962
+        "previousStreams": 5962,
+        "streamChange": 0
       },
       {
         "country": "SG",
@@ -962,8 +962,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": 0,
-        "streamChange": 53513
+        "previousStreams": 53513,
+        "streamChange": 0
       },
       {
         "country": "SV",
@@ -980,8 +980,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 82,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 9039
+        "previousStreams": 9039,
+        "streamChange": 0
       },
       {
         "country": "TH",
@@ -998,8 +998,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 24,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 100532
+        "previousStreams": 100532,
+        "streamChange": 0
       },
       {
         "country": "TW",
@@ -1016,8 +1016,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": 0,
-        "streamChange": 56041
+        "previousStreams": 56041,
+        "streamChange": 0
       },
       {
         "country": "UA",
@@ -1034,8 +1034,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 9,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 5869
+        "previousStreams": 5869,
+        "streamChange": 0
       },
       {
         "country": "UY",
@@ -1052,8 +1052,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 4,
         "direction": "up",
-        "previousStreams": 0,
-        "streamChange": 7193
+        "previousStreams": 7193,
+        "streamChange": 0
       },
       {
         "country": "VE",
@@ -1070,8 +1070,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 0,
         "direction": "same",
-        "previousStreams": 0,
-        "streamChange": 53469
+        "previousStreams": 53469,
+        "streamChange": 0
       },
       {
         "country": "VE",
@@ -1088,8 +1088,8 @@
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 8,
         "direction": "down",
-        "previousStreams": 0,
-        "streamChange": 11099
+        "previousStreams": 11099,
+        "streamChange": 0
       }
     ],
     "weekly": [
