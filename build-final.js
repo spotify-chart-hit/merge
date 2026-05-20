@@ -244,7 +244,7 @@ const albumMap = {
   "Interlude : Dive": "FACE",
   "Promise": "FACE",
 
-  // Singles / OST
+  // Single / OST
   "Closer Than This": "Single",
   "Christmas Love": "Single",
   "With you": "OST",
@@ -262,7 +262,6 @@ const albumMap = {
   // Feature
   "VIBE (feat. Jimin of BTS)": "FEATURE",
   "Slow Dance (feat. Sofia Carson)": "FEATURE"
-
 };
 
 /* ===========================
@@ -373,6 +372,20 @@ const enhancedAlbums =
     previousWeeklyAlbums
   );
 
+const dailySongs =
+  enhancedSongs.filter(
+    x =>
+      x.type ===
+      "daily"
+  );
+
+const weeklySongs =
+  enhancedSongs.filter(
+    x =>
+      x.type ===
+      "weekly"
+  );
+
 const final = {
 
   album: {
@@ -419,22 +432,22 @@ const final = {
       songsData?.weeklyLastUpdate
       ?? null,
 
+    // BACKWARD COMPATIBLE
     daily:
-      groupSongsByAlbum(
-        enhancedSongs.filter(
-          x =>
-            x.type ===
-            "daily"
-        )
-      ),
+      dailySongs,
 
     weekly:
+      weeklySongs,
+
+    // NEW GROUPED DATA
+    groupedDaily:
       groupSongsByAlbum(
-        enhancedSongs.filter(
-          x =>
-            x.type ===
-            "weekly"
-        )
+        dailySongs
+      ),
+
+    groupedWeekly:
+      groupSongsByAlbum(
+        weeklySongs
       )
   }
 };
