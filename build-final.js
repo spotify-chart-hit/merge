@@ -1,604 +1,453 @@
 const fs = require("fs");
 
-function load(
-file,
-fallback = []
-) {
+function load(file, fallback = []) {
+  try {
+    if (!fs.existsSync(file)) {
+      return fallback;
+    }
 
-try {
-
-if (
-!fs.existsSync(file)
-) {
-
-return fallback;
-
+    return JSON.parse(
+      fs.readFileSync(file, "utf8")
+    );
+  } catch {
+    return fallback;
+  }
 }
 
-return JSON.parse(
+function getRankChange(current, previous) {
+  if (
+    previous === undefined ||
+    previous === null
+  ) {
+    return {
+      change: 0,
+      direction: "new"
+    };
+  }
 
-fs.readFileSync(
-file,
-"utf8"
-)
+  const diff = previous - current;
 
-);
+  if (diff > 0) {
+    return {
+      change: diff,
+      direction: "up"
+    };
+  }
 
-}
+  if (diff < 0) {
+    return {
+      change: Math.abs(diff),
+      direction: "down"
+    };
+  }
 
-catch {
-
-return fallback;
-
-}
-
-}
-
-function getRankChange(
-current,
-previous
-) {
-
-if (
-
-previous === undefined
-||
-previous === null
-
-) {
-
-return {
-change: 0,
-direction: "new"
-};
-
-}
-
-const diff =
-previous - current;
-
-if (
-diff > 0
-) {
-
-return {
-change: diff,
-direction: "up"
-};
-
-}
-
-if (
-diff < 0
-) {
-
-return {
-change:
-Math.abs(diff),
-
-direction:
-"down"
-};
-
-}
-
-return {
-change: 0,
-direction: "same"
-};
-
+  return {
+    change: 0,
+    direction: "same"
+  };
 }
 
 function buildSong(
-today,
-dailyHistory,
-weeklyHistory
+  today,
+  dailyHistory,
+  weeklyHistory
 ) {
+  const dailyMap = new Map();
+  const weeklyMap = new Map();
 
-const dailyMap =
-new Map();
+  for (const item of dailyHistory) {
+    const key =
+      `${item.country}-${item.type}-${item.track}`;
 
-const weeklyMap =
-new Map();
+    dailyMap.set(key, item);
+  }
 
-for (
-const item
-of dailyHistory
-) {
+  for (const item of weeklyHistory) {
+    const key =
+      `${item.country}-${item.type}-${item.track}`;
 
-const key =
+    weeklyMap.set(key, item);
+  }
 
-`${item.country}-${item.type}-${item.track}`;
+  return today.map(item => {
+    const key =
+      `${item.country}-${item.type}-${item.track}`;
 
-dailyMap.set(
-key,
-item
-);
+    const old =
+      item.type === "daily"
+        ? dailyMap.get(key)
+        : weeklyMap.get(key);
 
-}
+    const rank =
+      getRankChange(
+        item.rank,
+        item.previousRank
+      );
 
-for (
-const item
-of weeklyHistory
-) {
+    const previousStreams =
+      Number(old?.streams ?? 0);
 
-const key =
+    const currentStreams =
+      Number(item.streams ?? 0);
 
-`${item.country}-${item.type}-${item.track}`;
+    const streamChange =
+      currentStreams -
+      previousStreams;
 
-weeklyMap.set(
-key,
-item
-);
-
-}
-
-return today.map(
-item => {
-
-const key =
-
-`${item.country}-${item.type}-${item.track}`;
-
-const old =
-
-item.type ===
-"daily"
-
-?
-
-dailyMap.get(key)
-
-:
-
-weeklyMap.get(key);
-
-const rank =
-getRankChange(
-
-item.rank,
-item.previousRank
-
-);
-
-const previousStreams =
-
-Number(
-old?.streams
-?? 0
-);
-
-const currentStreams =
-
-Number(
-item.streams
-?? 0
-);
-
-const streamChange =
-
-currentStreams
--
-previousStreams;
-
-return {
-
-...item,
-
-rankChange:
-rank.change,
-
-direction:
-rank.direction,
-
-previousStreams,
-
-streamChange
-
-};
-
-}
-);
-
+    return {
+      ...item,
+      rankChange: rank.change,
+      direction: rank.direction,
+      previousStreams,
+      streamChange
+    };
+  });
 }
 
 function buildArtist(
-today,
-dailyHistory,
-weeklyHistory
+  today,
+  dailyHistory,
+  weeklyHistory
 ) {
+  const dailyMap = new Map();
+  const weeklyMap = new Map();
 
-const dailyMap =
-new Map();
+  for (const item of dailyHistory) {
+    const key =
+      `${item.country}-${item.type}-${item.artist}`;
 
-const weeklyMap =
-new Map();
+    dailyMap.set(key, item);
+  }
 
-for (
-const item
-of dailyHistory
-) {
+  for (const item of weeklyHistory) {
+    const key =
+      `${item.country}-${item.type}-${item.artist}`;
 
-const key =
+    weeklyMap.set(key, item);
+  }
 
-`${item.country}-${item.type}-${item.artist}`;
+  return today.map(item => {
+    const key =
+      `${item.country}-${item.type}-${item.artist}`;
 
-dailyMap.set(
-key,
-item
-);
+    const old =
+      item.type === "daily"
+        ? dailyMap.get(key)
+        : weeklyMap.get(key);
 
-}
+    const rank =
+      getRankChange(
+        item.rank,
+        item.previousRank
+      );
 
-for (
-const item
-of weeklyHistory
-) {
+    const previousStreams =
+      Number(old?.streams ?? 0);
 
-const key =
+    const currentStreams =
+      Number(item.streams ?? 0);
 
-`${item.country}-${item.type}-${item.artist}`;
+    const streamChange =
+      currentStreams -
+      previousStreams;
 
-weeklyMap.set(
-key,
-item
-);
-
-}
-
-return today.map(
-item => {
-
-const key =
-
-`${item.country}-${item.type}-${item.artist}`;
-
-const old =
-
-item.type ===
-"daily"
-
-?
-
-dailyMap.get(key)
-
-:
-
-weeklyMap.get(key);
-
-const rank =
-getRankChange(
-
-item.rank,
-item.previousRank
-
-);
-
-const previousStreams =
-
-Number(
-old?.streams
-?? 0
-);
-
-const currentStreams =
-
-Number(
-item.streams
-?? 0
-);
-
-const streamChange =
-
-currentStreams
--
-previousStreams;
-
-return {
-
-...item,
-
-rankChange:
-rank.change,
-
-direction:
-rank.direction,
-
-previousStreams,
-
-streamChange
-
-};
-
-}
-);
-
+    return {
+      ...item,
+      rankChange: rank.change,
+      direction: rank.direction,
+      previousStreams,
+      streamChange
+    };
+  });
 }
 
 function buildAlbum(
-today,
-weeklyHistory
+  today,
+  weeklyHistory
 ) {
+  const weeklyMap =
+    new Map();
 
-const weeklyMap =
-new Map();
+  for (const item of weeklyHistory) {
+    const key =
+      `${item.country}-${item.album}`;
 
-for (
-const item
-of weeklyHistory
-) {
+    weeklyMap.set(
+      key,
+      item
+    );
+  }
 
-const key =
+  return today.map(item => {
+    const key =
+      `${item.country}-${item.album}`;
 
-`${item.country}-${item.album}`;
+    const old =
+      weeklyMap.get(key);
 
-weeklyMap.set(
-key,
-item
-);
+    const rank =
+      getRankChange(
+        item.rank,
+        item.previousRank
+      );
 
+    const previousStreams =
+      Number(old?.streams ?? 0);
+
+    const currentStreams =
+      Number(item.streams ?? 0);
+
+    const streamChange =
+      currentStreams -
+      previousStreams;
+
+    return {
+      ...item,
+      rankChange:
+        rank.change,
+      direction:
+        rank.direction,
+      previousStreams,
+      streamChange
+    };
+  });
 }
 
-return today.map(
-item => {
+/* ===========================
+   JIMIN ALBUM MAP
+=========================== */
 
-const key =
+const albumMap = {
 
-`${item.country}-${item.album}`;
+  // MUSE
+  "Who": "MUSE",
+  "Who (Rock Remix)": "MUSE",
+  "Who (Acoustic Remix)": "MUSE",
+  "Who (Shibuyakei Remix)": "MUSE",
+  "Who (Instrumental)": "MUSE",
+  "Who (Funky Remix)": "MUSE",
+  "Who (Beautiful Mind Remix)": "MUSE",
+  "Be Mine": "MUSE",
+  "Smeraldo Garden Marching Band (feat. Loco)": "MUSE",
+  "Rebirth (Intro)": "MUSE",
+  "Interlude : Showtime": "MUSE",
 
-const old =
-weeklyMap.get(
-key
-);
+  // FACE
+  "Like Crazy": "FACE",
+  "Like Crazy (English Version)": "FACE",
+  "Like Crazy (Deep House Remix)": "FACE",
+  "Like Crazy (UK Garage Remix)": "FACE",
+  "Like Crazy (Instrumental)": "FACE",
+  "Set Me Free Pt.2": "FACE",
+  "Face-off": "FACE",
+  "Alone": "FACE",
+  "Interlude : Dive": "FACE",
+  "Promise": "FACE",
 
-const rank =
-getRankChange(
+  // Singles / OST
+  "Closer Than This": "Single",
+  "Christmas Love": "Single",
+  "With you": "OST",
+  "With you - Instrumental": "OST",
 
-item.rank,
-item.previousRank
+  // Angel
+  "Angel Pt. 1 (feat. Kodak Black, NLE Choppa, Jimin of BTS, JVKE & Muni Long)": "ANGEL",
+  "Angel Pt. 2 (feat. Jimin of BTS & JVKE feat. Charlie Puth)": "ANGEL",
+  "Angel Pt. 1 (feat. Jimin of BTS, JVKE & Muni Long) - Track Version": "ANGEL",
+  "Angel Pt. 1 (feat. Jimin of BTS, JVKE & Muni Long) - Sped Up": "ANGEL",
+  "Angel Pt. 2 - Acoustic Version": "ANGEL",
+  "Angel (feat. Muni Long, JVKE, NLE Choppa) (Anniversary Edition)": "ANGEL",
+  "Angel Pt. 2 - Sped Up": "ANGEL",
 
-);
-
-const previousStreams =
-
-Number(
-old?.streams
-?? 0
-);
-
-const currentStreams =
-
-Number(
-item.streams
-?? 0
-);
-
-const streamChange =
-
-currentStreams
--
-previousStreams;
-
-return {
-
-...item,
-
-rankChange:
-rank.change,
-
-direction:
-rank.direction,
-
-previousStreams,
-
-streamChange
+  // Feature
+  "VIBE (feat. Jimin of BTS)": "FEATURE",
+  "Slow Dance (feat. Sofia Carson)": "FEATURE"
 
 };
 
-}
-);
+/* ===========================
+   GROUP SONGS BY ALBUM
+=========================== */
 
+function groupSongsByAlbum(entries) {
+
+  const grouped = {};
+
+  for (const item of entries) {
+
+    const album =
+      albumMap[item.track]
+      || "Other";
+
+    if (!grouped[album]) {
+      grouped[album] = {
+        album,
+        totalStreams: 0,
+        songs: []
+      };
+    }
+
+    grouped[album]
+      .songs
+      .push(item);
+
+    grouped[album]
+      .totalStreams +=
+      Number(item.streams || 0);
+  }
+
+  return Object
+    .values(grouped)
+    .sort(
+      (a, b) =>
+        b.totalStreams -
+        a.totalStreams
+    );
 }
 
 const songsData =
-load(
-"data/song.json",
-{}
-);
+  load("data/song.json", {});
 
 const artistsData =
-load(
-"data/artist.json",
-{}
-);
+  load("data/artist.json", {});
 
 const albumsData =
-load(
-"data/album.json",
-{}
-);
+  load("data/album.json", {});
 
 const songs =
-songsData.entries
-?? [];
+  songsData.entries ?? [];
 
 const artists =
-artistsData.entries
-?? [];
+  artistsData.entries ?? [];
 
 const albums =
-albumsData.entries
-?? [];
+  albumsData.entries ?? [];
 
 const yesterdayDailySongs =
-load(
-"data/history/yesterday-daily-song.json",
-{}
-)
-?.entries
-?? [];
+  load(
+    "data/history/yesterday-daily-song.json",
+    {}
+  )?.entries ?? [];
 
 const previousWeeklySongs =
-load(
-"data/history/previous-weekly-song.json",
-{}
-)
-?.entries
-?? [];
+  load(
+    "data/history/previous-weekly-song.json",
+    {}
+  )?.entries ?? [];
 
 const yesterdayDailyArtists =
-load(
-"data/history/yesterday-daily-artist.json",
-{}
-)
-?.entries
-?? [];
+  load(
+    "data/history/yesterday-daily-artist.json",
+    {}
+  )?.entries ?? [];
 
 const previousWeeklyArtists =
-load(
-"data/history/previous-weekly-artist.json",
-{}
-)
-?.entries
-?? [];
+  load(
+    "data/history/previous-weekly-artist.json",
+    {}
+  )?.entries ?? [];
 
 const previousWeeklyAlbums =
-load(
-"data/history/previous-weekly-album.json",
-{}
-)
-?.entries
-?? [];
+  load(
+    "data/history/previous-weekly-album.json",
+    {}
+  )?.entries ?? [];
 
 const enhancedSongs =
-buildSong(
-songs,
-yesterdayDailySongs,
-previousWeeklySongs
-);
+  buildSong(
+    songs,
+    yesterdayDailySongs,
+    previousWeeklySongs
+  );
 
 const enhancedArtists =
-buildArtist(
-artists,
-yesterdayDailyArtists,
-previousWeeklyArtists
-);
+  buildArtist(
+    artists,
+    yesterdayDailyArtists,
+    previousWeeklyArtists
+  );
 
 const enhancedAlbums =
-buildAlbum(
-albums,
-previousWeeklyAlbums
-);
+  buildAlbum(
+    albums,
+    previousWeeklyAlbums
+  );
 
 const final = {
 
-album: {
+  album: {
+    weeklyLastUpdate:
+      albumsData?.weeklyLastUpdate
+      ?? null,
 
-weeklyLastUpdate:
+    weekly:
+      enhancedAlbums
+  },
 
-albumsData
-?.weeklyLastUpdate
+  artist: {
 
-??
+    dailyLastUpdate:
+      artistsData?.dailyLastUpdate
+      ?? null,
 
-null,
+    weeklyLastUpdate:
+      artistsData?.weeklyLastUpdate
+      ?? null,
 
-weekly:
+    daily:
+      enhancedArtists.filter(
+        x =>
+          x.type ===
+          "daily"
+      ),
 
-enhancedAlbums
+    weekly:
+      enhancedArtists.filter(
+        x =>
+          x.type ===
+          "weekly"
+      )
+  },
 
-},
+  song: {
 
-artist: {
+    dailyLastUpdate:
+      songsData?.dailyLastUpdate
+      ?? null,
 
-dailyLastUpdate:
+    weeklyLastUpdate:
+      songsData?.weeklyLastUpdate
+      ?? null,
 
-artistsData
-?.dailyLastUpdate
+    daily:
+      groupSongsByAlbum(
+        enhancedSongs.filter(
+          x =>
+            x.type ===
+            "daily"
+        )
+      ),
 
-??
-
-null,
-
-weeklyLastUpdate:
-
-artistsData
-?.weeklyLastUpdate
-
-??
-
-null,
-
-daily:
-
-enhancedArtists.filter(
-x =>
-x.type ===
-"daily"
-),
-
-weekly:
-
-enhancedArtists.filter(
-x =>
-x.type ===
-"weekly"
-)
-
-},
-
-song: {
-
-dailyLastUpdate:
-
-songsData
-?.dailyLastUpdate
-
-??
-
-null,
-
-weeklyLastUpdate:
-
-songsData
-?.weeklyLastUpdate
-
-??
-
-null,
-
-daily:
-
-enhancedSongs.filter(
-x =>
-x.type ===
-"daily"
-),
-
-weekly:
-
-enhancedSongs.filter(
-x =>
-x.type ===
-"weekly"
-)
-
-}
-
+    weekly:
+      groupSongsByAlbum(
+        enhancedSongs.filter(
+          x =>
+            x.type ===
+            "weekly"
+        )
+      )
+  }
 };
 
 fs.writeFileSync(
-
-"final.json",
-
-JSON.stringify(
-final,
-null,
-2
-)
-
+  "final.json",
+  JSON.stringify(
+    final,
+    null,
+    2
+  )
 );
 
 console.log(
-"final.json updated 😍"
+  "final.json updated 😍"
 );
