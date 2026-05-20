@@ -96,9 +96,19 @@ function buildSong(
 
     return {
       ...item,
-      rankChange: rank.change,
-      direction: rank.direction,
+
+      songGroup:
+        albumMap[item.track]
+        || "Other",
+
+      rankChange:
+        rank.change,
+
+      direction:
+        rank.direction,
+
       previousStreams,
+
       streamChange
     };
   });
@@ -141,23 +151,25 @@ function buildArtist(
         item.previousRank
       );
 
-    const previousStreams =
-      Number(old?.streams ?? 0);
+      const previousStreams =
+        Number(old?.streams ?? 0);
 
-    const currentStreams =
-      Number(item.streams ?? 0);
+      const currentStreams =
+        Number(item.streams ?? 0);
 
-    const streamChange =
-      currentStreams -
-      previousStreams;
+      const streamChange =
+        currentStreams -
+        previousStreams;
 
-    return {
-      ...item,
-      rankChange: rank.change,
-      direction: rank.direction,
-      previousStreams,
-      streamChange
-    };
+      return {
+        ...item,
+        rankChange:
+          rank.change,
+        direction:
+          rank.direction,
+        previousStreams,
+        streamChange
+      };
   });
 }
 
@@ -264,45 +276,6 @@ const albumMap = {
   "Slow Dance (feat. Sofia Carson)": "FEATURE"
 };
 
-/* ===========================
-   GROUP SONGS BY ALBUM
-=========================== */
-
-function groupSongsByAlbum(entries) {
-
-  const grouped = {};
-
-  for (const item of entries) {
-
-    const album =
-      albumMap[item.track]
-      || "Other";
-
-    if (!grouped[album]) {
-      grouped[album] = {
-        album,
-        totalStreams: 0,
-        songs: []
-      };
-    }
-
-    grouped[album]
-      .songs
-      .push(item);
-
-    grouped[album]
-      .totalStreams +=
-      Number(item.streams || 0);
-  }
-
-  return Object
-    .values(grouped)
-    .sort(
-      (a, b) =>
-        b.totalStreams -
-        a.totalStreams
-    );
-}
 
 const songsData =
   load("data/song.json", {});
@@ -432,23 +405,11 @@ const final = {
       songsData?.weeklyLastUpdate
       ?? null,
 
-    // BACKWARD COMPATIBLE
     daily:
       dailySongs,
 
     weekly:
-      weeklySongs,
-
-    // NEW GROUPED DATA
-    groupedDaily:
-      groupSongsByAlbum(
-        dailySongs
-      ),
-
-    groupedWeekly:
-      groupSongsByAlbum(
-        weeklySongs
-      )
+      weeklySongs
   }
 };
 
