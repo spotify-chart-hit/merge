@@ -3,15 +3,12 @@ name: Merge Charts
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron: "*/5 * * * *"
-
 permissions:
   contents: write
 
 concurrency:
   group: merge-charts
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   merge:
@@ -44,6 +41,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: node fetch-artist.js
 
+      - name: Wait for files
+        run: sleep 5
+
       - name: Build Final
         run: node build-final.js
 
@@ -57,8 +57,11 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "update merge"
 
-            git pull --rebase origin main || true
-            git push
+            until git push; do
+              echo "Retry push 😭"
+              git pull --rebase origin main
+              sleep 3
+            done
           else
             echo "No changes"
           fi
