@@ -11,10 +11,9 @@ permissions:
 
 concurrency:
   group: merge-charts
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
-
   merge:
     runs-on: ubuntu-latest
 
@@ -29,35 +28,25 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
 
-      - name: Pull latest files
-        run: |
-          git pull origin main
-          sleep 5
+      - name: Install dependencies
+        run: npm ci
 
       - name: Fetch Regional
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: node fetch-regional.js
 
-      - name: Wait Regional
-        run: sleep 3
-
       - name: Fetch Album
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: node fetch-album.js
 
-      - name: Wait Album
-        run: sleep 3
-
       - name: Fetch Artist
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: node fetch-artist.js
-
-      - name: Wait Artist
-        run: sleep 3
 
       - name: Build Final
         run: node build-final.js
@@ -72,10 +61,8 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "update merge"
 
-            until git push; do
-              echo "Retry push 😭"
-              git pull --rebase origin main
-              sleep 3
-            done
+            git pull --rebase origin main || true
+            git push
+          else
+            echo "No changes"
           fi
-
