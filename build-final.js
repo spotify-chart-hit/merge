@@ -286,6 +286,24 @@ const artistsData =
 const albumsData =
   load("data/album.json", {});
 
+const globalSongsData =
+  load(
+    "data/global-song.json",
+    {}
+  );
+
+const globalArtistsData =
+  load(
+    "data/global-artist.json",
+    {}
+  );
+
+const globalAlbumsData =
+  load(
+    "data/global-album.json",
+    {}
+  );
+
 const songs =
   songsData.entries ?? [];
 
@@ -294,6 +312,18 @@ const artists =
 
 const albums =
   albumsData.entries ?? [];
+
+const globalSongs =
+  globalSongsData
+  .entries ?? [];
+
+const globalArtists =
+  globalArtistsData
+  .entries ?? [];
+
+const globalAlbums =
+  globalAlbumsData
+  .entries ?? [];
 
 const yesterdayDailySongs =
   load(
@@ -345,6 +375,21 @@ const enhancedAlbums =
     previousWeeklyAlbums
   );
 
+const mergedSongs = [
+  ...enhancedSongs,
+  ...globalSongs
+];
+
+const mergedArtists = [
+  ...enhancedArtists,
+  ...globalArtists
+];
+
+const mergedAlbums = [
+  ...enhancedAlbums,
+  ...globalAlbums
+];
+
 const dailySongs =
   enhancedSongs.filter(
     x =>
@@ -363,32 +408,47 @@ const final = {
 
   album: {
     weeklyLastUpdate:
-      albumsData?.weeklyLastUpdate
-      ?? null,
+      albumsData
+      ?.weeklyLastUpdate
+      ??
+      globalAlbumsData
+      ?.weeklyLastUpdate
+      ??
+      null,
 
     weekly:
-      enhancedAlbums
+      mergedAlbums
   },
 
   artist: {
 
     dailyLastUpdate:
-      artistsData?.dailyLastUpdate
-      ?? null,
+      artistsData
+      ?.dailyLastUpdate
+      ??
+      globalArtistsData
+      ?.dailyLastUpdate
+      ??
+      null,
 
     weeklyLastUpdate:
-      artistsData?.weeklyLastUpdate
-      ?? null,
+      artistsData
+      ?.weeklyLastUpdate
+      ??
+      globalArtistsData
+      ?.weeklyLastUpdate
+      ??
+      null,
 
     daily:
-      enhancedArtists.filter(
+      mergedArtists.filter(
         x =>
           x.type ===
           "daily"
       ),
 
     weekly:
-      enhancedArtists.filter(
+      mergedArtists.filter(
         x =>
           x.type ===
           "weekly"
@@ -398,18 +458,36 @@ const final = {
   song: {
 
     dailyLastUpdate:
-      songsData?.dailyLastUpdate
-      ?? null,
+      songsData
+      ?.dailyLastUpdate
+      ??
+      globalSongsData
+      ?.dailyLastUpdate
+      ??
+      null,
 
     weeklyLastUpdate:
-      songsData?.weeklyLastUpdate
-      ?? null,
+      songsData
+      ?.weeklyLastUpdate
+      ??
+      globalSongsData
+      ?.weeklyLastUpdate
+      ??
+      null,
 
     daily:
-      dailySongs,
+      mergedSongs.filter(
+        x =>
+          x.type ===
+          "daily"
+      ),
 
     weekly:
-      weeklySongs
+      mergedSongs.filter(
+        x =>
+          x.type ===
+          "weekly"
+      )
   }
 };
 
