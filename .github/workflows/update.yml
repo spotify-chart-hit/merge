@@ -26,6 +26,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Fetch Regional
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -40,6 +43,24 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: node fetch-artist.js
+
+      # GLOBAL SONG
+      - name: Fetch Global Song
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: node fetch-global-song.js
+
+      # GLOBAL ARTIST
+      - name: Fetch Global Artist
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: node fetch-global-artist.js
+
+      # GLOBAL ALBUM
+      - name: Fetch Global Album
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: node fetch-global-album.js
 
       - name: Wait for files
         run: sleep 5
