@@ -286,23 +286,29 @@ const artistsData =
 const albumsData =
   load("data/album.json", {});
 
+
 const globalSongsData =
-  load(
-    "data/global-song.json",
-    {}
-  );
-
+  load("data/global-song.json", {});
 const globalArtistsData =
-  load(
-    "data/global-artist.json",
-    {}
-  );
-
+  load("data/global-artist.json", {});
 const globalAlbumsData =
-  load(
-    "data/global-album.json",
-    {}
-  );
+  load("data/global-album.json", {});
+const globalSongs =
+  globalSongsData.entries ?? [];
+const globalArtists =
+  globalArtistsData.entries ?? [];
+const globalAlbums =
+  globalAlbumsData.entries ?? [];
+const yesterdayDailyGlobalSongs =
+  load("data/history/yesterday-daily-global-song.json", {})?.entries ?? [];
+const previousWeeklyGlobalSongs =
+  load("data/history/previous-weekly-global-song.json", {})?.entries ?? [];
+const yesterdayDailyGlobalArtists =
+  load("data/history/yesterday-daily-global-artist.json", {})?.entries ?? [];
+const previousWeeklyGlobalArtists =
+  load("data/history/previous-weekly-global-artist.json", {})?.entries ?? [];
+const previousWeeklyGlobalAlbums =
+  load("data/history/previous-weekly-global-album.json", {})?.entries ?? [];
 
 const songs =
   songsData.entries ?? [];
@@ -312,18 +318,6 @@ const artists =
 
 const albums =
   albumsData.entries ?? [];
-
-const globalSongs =
-  globalSongsData
-  .entries ?? [];
-
-const globalArtists =
-  globalArtistsData
-  .entries ?? [];
-
-const globalAlbums =
-  globalAlbumsData
-  .entries ?? [];
 
 const yesterdayDailySongs =
   load(
@@ -375,30 +369,26 @@ const enhancedAlbums =
     previousWeeklyAlbums
   );
 
-const mergedSongs = [
-  ...enhancedSongs,
-  ...globalSongs
-];
+const enhancedGlobalSongs =
+  buildSong(globalSongs,yesterdayDailyGlobalSongs,previousWeeklyGlobalSongs);
+const enhancedGlobalArtists =
+  buildArtist(globalArtists,yesterdayDailyGlobalArtists,previousWeeklyGlobalArtists);
+const enhancedGlobalAlbums =
+  buildAlbum(globalAlbums,previousWeeklyGlobalAlbums);
 
-const mergedArtists = [
-  ...enhancedArtists,
-  ...globalArtists
-];
-
-const mergedAlbums = [
-  ...enhancedAlbums,
-  ...globalAlbums
-];
+const mergedSongs=[...enhancedSongs,...enhancedGlobalSongs];
+const mergedArtists=[...enhancedArtists,...enhancedGlobalArtists];
+const mergedAlbums=[...enhancedAlbums,...enhancedGlobalAlbums];
 
 const dailySongs =
-  enhancedSongs.filter(
+  mergedSongs.filter(
     x =>
       x.type ===
       "daily"
   );
 
 const weeklySongs =
-  enhancedSongs.filter(
+  mergedSongs.filter(
     x =>
       x.type ===
       "weekly"
@@ -408,13 +398,8 @@ const final = {
 
   album: {
     weeklyLastUpdate:
-      albumsData
-      ?.weeklyLastUpdate
-      ??
-      globalAlbumsData
-      ?.weeklyLastUpdate
-      ??
-      null,
+      albumsData?.weeklyLastUpdate
+      ?? null,
 
     weekly:
       mergedAlbums
@@ -423,22 +408,12 @@ const final = {
   artist: {
 
     dailyLastUpdate:
-      artistsData
-      ?.dailyLastUpdate
-      ??
-      globalArtistsData
-      ?.dailyLastUpdate
-      ??
-      null,
+      artistsData?.dailyLastUpdate
+      ?? null,
 
     weeklyLastUpdate:
-      artistsData
-      ?.weeklyLastUpdate
-      ??
-      globalArtistsData
-      ?.weeklyLastUpdate
-      ??
-      null,
+      artistsData?.weeklyLastUpdate
+      ?? null,
 
     daily:
       mergedArtists.filter(
@@ -458,29 +433,15 @@ const final = {
   song: {
 
     dailyLastUpdate:
-      songsData
-      ?.dailyLastUpdate
-      ??
-      globalSongsData
-      ?.dailyLastUpdate
-      ??
-      null,
+      songsData?.dailyLastUpdate
+      ?? null,
 
     weeklyLastUpdate:
-      songsData
-      ?.weeklyLastUpdate
-      ??
-      globalSongsData
-      ?.weeklyLastUpdate
-      ??
-      null,
+      songsData?.weeklyLastUpdate
+      ?? null,
 
     daily:
-      mergedSongs.filter(
-        x =>
-          x.type ===
-          "daily"
-      ),
+      dailySongs,
 
     weekly:
       mergedSongs.filter(
