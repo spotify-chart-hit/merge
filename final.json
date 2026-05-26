@@ -1803,8 +1803,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 0,
-        "streamChange": 10033863
+        "previousStreams": 10255004,
+        "streamChange": -221141
       }
     ]
   }
