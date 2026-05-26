@@ -57,21 +57,21 @@ function buildSong(
 
   for (const item of dailyHistory) {
     const key =
-      `${item.country}-${item.type}-${item.track}`;
+      `${item.country}-${item.type}-${item.track}-${item.artists?.join(",")}`;
 
     dailyMap.set(key, item);
   }
 
   for (const item of weeklyHistory) {
     const key =
-      `${item.country}-${item.type}-${item.track}`;
+      `${item.country}-${item.type}-${item.track}-${item.artists?.join(",")}`;
 
     weeklyMap.set(key, item);
   }
 
   return today.map(item => {
     const key =
-      `${item.country}-${item.type}-${item.track}`;
+      `${item.country}-${item.type}-${item.track}-${item.artists?.join(",")}`;
 
     const old =
       item.type === "daily"
@@ -223,7 +223,7 @@ function buildAlbum(
       streamChange
     };
   });
-}
+        }
 
 /* ===========================
    JIMIN ALBUM MAP
@@ -428,7 +428,6 @@ const previousWeeklyAlbums =
     "data/history/previous-weekly-album.json",
     {}
   )?.entries ?? [];
-
 /* ===========================
    BUILD REGIONAL
 =========================== */
@@ -576,3 +575,4 @@ fs.writeFileSync(
 console.log(
   "final.json updated 😍"
 );
+
