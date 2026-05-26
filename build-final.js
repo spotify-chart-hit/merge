@@ -57,21 +57,21 @@ function buildSong(
 
   for (const item of dailyHistory) {
     const key =
-      `${item.country}-${item.type}-${item.track}-${item.artists?.join(",")}`;
+      `${item.country}-${item.type}-${item.track}`;
 
     dailyMap.set(key, item);
   }
 
   for (const item of weeklyHistory) {
     const key =
-      `${item.country}-${item.type}-${item.track}-${item.artists?.join(",")}`;
+      `${item.country}-${item.type}-${item.track}`;
 
     weeklyMap.set(key, item);
   }
 
   return today.map(item => {
     const key =
-      `${item.country}-${item.type}-${item.track}-${item.artists?.join(",")}`;
+      `${item.country}-${item.type}-${item.track}`;
 
     const old =
       item.type === "daily"
@@ -124,21 +124,21 @@ function buildArtist(
 
   for (const item of dailyHistory) {
     const key =
-      `${item.country}-${item.type}-${item.artist || item.artists?.join(",")}`;
+      `${item.country}-${item.type}-${item.artist}`;
 
     dailyMap.set(key, item);
   }
 
   for (const item of weeklyHistory) {
     const key =
-      `${item.country}-${item.type}-${item.artist || item.artists?.join(",")}`;
+      `${item.country}-${item.type}-${item.artist}`;
 
     weeklyMap.set(key, item);
   }
 
   return today.map(item => {
     const key =
-      `${item.country}-${item.type}-${item.artist || item.artists?.join(",")}`;
+      `${item.country}-${item.type}-${item.artist}`;
 
     const old =
       item.type === "daily"
@@ -223,7 +223,7 @@ function buildAlbum(
       streamChange
     };
   });
-        }
+      }
 
 /* ===========================
    JIMIN ALBUM MAP
@@ -276,6 +276,10 @@ const albumMap = {
   "Slow Dance (feat. Sofia Carson)": "FEATURE"
 };
 
+/* ===========================
+   REGIONAL DATA
+=========================== */
+
 const songsData =
   load("data/song.json", {});
 
@@ -284,111 +288,6 @@ const artistsData =
 
 const albumsData =
   load("data/album.json", {});
-
-/* ===========================
-   GLOBAL DATA
-=========================== */
-
-const globalData =
-  load(
-    "data/global.json",
-    {}
-  );
-
-const globalEntries =
-  globalData.entries ?? [];
-
-const yesterdayGlobal =
-  load(
-    "data/history/yesterday-daily-global.json",
-    {}
-  )?.entries ?? [];
-
-const previousWeeklyGlobal =
-  load(
-    "data/history/previous-weekly-global.json",
-    {}
-  )?.entries ?? [];
-
-/* ===========================
-   GLOBAL SPLIT
-=========================== */
-
-const globalSongs =
-  globalEntries.filter(
-    x => x.track
-  );
-
-const globalArtists =
-  globalEntries.filter(
-    x =>
-      x.artist ||
-      x.artists
-  );
-
-const globalAlbums =
-  globalEntries.filter(
-    x => x.album
-  );
-
-/* ===========================
-   GLOBAL HISTORY
-=========================== */
-
-const yesterdayDailyGlobalSongs =
-  yesterdayGlobal.filter(
-    x =>
-      x.type ===
-      "daily"
-      &&
-      x.track
-  );
-
-const previousWeeklyGlobalSongs =
-  previousWeeklyGlobal.filter(
-    x =>
-      x.type ===
-      "weekly"
-      &&
-      x.track
-  );
-
-const yesterdayDailyGlobalArtists =
-  yesterdayGlobal.filter(
-    x =>
-      x.type ===
-      "daily"
-      &&
-      (
-        x.artist ||
-        x.artists
-      )
-  );
-
-const previousWeeklyGlobalArtists =
-  previousWeeklyGlobal.filter(
-    x =>
-      x.type ===
-      "weekly"
-      &&
-      (
-        x.artist ||
-        x.artists
-      )
-  );
-
-const previousWeeklyGlobalAlbums =
-  previousWeeklyGlobal.filter(
-    x =>
-      x.type ===
-      "weekly"
-      &&
-      x.album
-  );
-
-/* ===========================
-   REGIONAL DATA
-=========================== */
 
 const songs =
   songsData.entries ?? [];
@@ -428,6 +327,52 @@ const previousWeeklyAlbums =
     "data/history/previous-weekly-album.json",
     {}
   )?.entries ?? [];
+
+/* ===========================
+   GLOBAL DATA (STANDALONE)
+=========================== */
+
+const globalData =
+  load(
+    "data/global.json",
+    {}
+  );
+
+const globalEntries =
+  globalData.entries ?? [];
+
+const yesterdayGlobal =
+  load(
+    "data/history/yesterday-daily-global.json",
+    {}
+  )?.entries ?? [];
+
+const previousWeeklyGlobal =
+  load(
+    "data/history/previous-weekly-global.json",
+    {}
+  )?.entries ?? [];
+
+const globalSongs =
+  globalEntries.filter(
+    x => x.track
+  );
+
+const yesterdayDailyGlobalSongs =
+  yesterdayGlobal.filter(
+    x =>
+      x.type === "daily"
+      &&
+      x.track
+  );
+
+const previousWeeklyGlobalSongs =
+  previousWeeklyGlobal.filter(
+    x =>
+      x.type === "weekly"
+      &&
+      x.track
+  );l
 /* ===========================
    BUILD REGIONAL
 =========================== */
@@ -463,47 +408,15 @@ const enhancedGlobalSongs =
     previousWeeklyGlobalSongs
   );
 
-const enhancedGlobalArtists =
-  buildArtist(
-    globalArtists,
-    yesterdayDailyGlobalArtists,
-    previousWeeklyGlobalArtists
-  );
-
-const enhancedGlobalAlbums =
-  buildAlbum(
-    globalAlbums,
-    previousWeeklyGlobalAlbums
-  );
-
-/* ===========================
-   MERGE
-=========================== */
-
-const mergedSongs = [
-  ...enhancedSongs,
-  ...enhancedGlobalSongs
-];
-
-const mergedArtists = [
-  ...enhancedArtists,
-  ...enhancedGlobalArtists
-];
-
-const mergedAlbums = [
-  ...enhancedAlbums,
-  ...enhancedGlobalAlbums
-];
-
 const dailySongs =
-  mergedSongs.filter(
+  enhancedSongs.filter(
     x =>
       x.type ===
       "daily"
   );
 
 const weeklySongs =
-  mergedSongs.filter(
+  enhancedSongs.filter(
     x =>
       x.type ===
       "weekly"
@@ -511,13 +424,38 @@ const weeklySongs =
 
 const final = {
 
+  global: {
+
+    dailyLastUpdate:
+      globalData?.dailyLastUpdate
+      ?? null,
+
+    weeklyLastUpdate:
+      globalData?.weeklyLastUpdate
+      ?? null,
+
+    daily:
+      enhancedGlobalSongs.filter(
+        x =>
+          x.type ===
+          "daily"
+      ),
+
+    weekly:
+      enhancedGlobalSongs.filter(
+        x =>
+          x.type ===
+          "weekly"
+      )
+  },
+
   album: {
     weeklyLastUpdate:
       albumsData?.weeklyLastUpdate
       ?? null,
 
     weekly:
-      mergedAlbums
+      enhancedAlbums
   },
 
   artist: {
@@ -531,14 +469,14 @@ const final = {
       ?? null,
 
     daily:
-      mergedArtists.filter(
+      enhancedArtists.filter(
         x =>
           x.type ===
           "daily"
       ),
 
     weekly:
-      mergedArtists.filter(
+      enhancedArtists.filter(
         x =>
           x.type ===
           "weekly"
@@ -575,4 +513,3 @@ fs.writeFileSync(
 console.log(
   "final.json updated 😍"
 );
-
