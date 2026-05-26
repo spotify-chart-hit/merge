@@ -2,3 +2,37 @@
   "dailyLastUpdate": "2026-05-20",
   "weeklyLastUpdate": "2026-05-14",
   "entries": [
+   {
+      "country": "GLOBAL",
+      "type": "weekly",
+      "rank": 130,
+      "previousRank": 128,
+      "peakRank": 1,
+      "appearances": 95,
+      "streams": "10255004",
+      "track": "Who",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+      "rankChange": 2,
+      "direction": "down",
+      "entryStatus": "MOVED_DOWN"
+    },
+    {
+      "country": "GLOBAL",
+      "type": "daily",
+      "rank": 150,
+      "previousRank": 154,
+      "peakRank": 1,
+      "appearances": 671,
+      "streams": "1447493",
+      "track": "Who",
+      "artists": [
+        "Jimin"
+      ],
+      "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+      "rankChange": 4,
+      "direction": "up",
+      "entryStatus": "MOVED_UP"
+    }
