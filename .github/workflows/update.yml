@@ -44,23 +44,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: node fetch-artist.js
 
-      # GLOBAL SONG
-      - name: Fetch Global Song
+      - name: Fetch Global
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: node fetch-global-song.js
-
-      # GLOBAL ARTIST
-      - name: Fetch Global Artist
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: node fetch-global-artist.js
-
-      # GLOBAL ALBUM
-      - name: Fetch Global Album
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: node fetch-global-album.js
+        run: node fetch-global.js
 
       - name: Wait for files
         run: sleep 5
