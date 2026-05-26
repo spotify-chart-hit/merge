@@ -372,7 +372,7 @@ const previousWeeklyGlobalSongs =
       x.type === "weekly"
       &&
       x.track
-  );l
+  );
 /* ===========================
    BUILD REGIONAL
 =========================== */
