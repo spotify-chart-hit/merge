@@ -300,7 +300,7 @@ const globalEntries =
 
 const yesterdayGlobal =
   load(
-    "data/history/yesterday-global.json",
+    "data/history/yesterday-daily-global.json",
     {}
   )?.entries ?? [];
 
