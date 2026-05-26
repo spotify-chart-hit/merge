@@ -879,8 +879,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 1273749,
-        "streamChange": 173132
+        "previousStreams": 0,
+        "streamChange": 1446881
       },
       {
         "country": "JP",
@@ -1503,8 +1503,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 10255004,
-        "streamChange": -221141
+        "previousStreams": 0,
+        "streamChange": 10033863
       },
       {
         "country": "JP",
