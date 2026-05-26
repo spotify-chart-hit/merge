@@ -20,8 +20,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 0,
-        "streamChange": 1497310
+        "previousStreams": null,
+        "streamChange": null
       }
     ],
     "weekly": [
