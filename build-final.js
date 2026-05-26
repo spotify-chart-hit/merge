@@ -124,21 +124,21 @@ function buildArtist(
 
   for (const item of dailyHistory) {
     const key =
-      `${item.country}-${item.type}-${item.artist}`;
+      `${item.country}-${item.type}-${item.artist || item.artists?.join(",")}`;
 
     dailyMap.set(key, item);
   }
 
   for (const item of weeklyHistory) {
     const key =
-      `${item.country}-${item.type}-${item.artist}`;
+      `${item.country}-${item.type}-${item.artist || item.artists?.join(",")}`;
 
     weeklyMap.set(key, item);
   }
 
   return today.map(item => {
     const key =
-      `${item.country}-${item.type}-${item.artist}`;
+      `${item.country}-${item.type}-${item.artist || item.artists?.join(",")}`;
 
     const old =
       item.type === "daily"
@@ -228,6 +228,7 @@ function buildAlbum(
 /* ===========================
    JIMIN ALBUM MAP
 =========================== */
+
 const albumMap = {
 
   // MUSE
@@ -320,7 +321,9 @@ const globalSongs =
 
 const globalArtists =
   globalEntries.filter(
-    x => x.artist
+    x =>
+      x.artist ||
+      x.artists
   );
 
 const globalAlbums =
@@ -356,7 +359,10 @@ const yesterdayDailyGlobalArtists =
       x.type ===
       "daily"
       &&
-      x.artist
+      (
+        x.artist ||
+        x.artists
+      )
   );
 
 const previousWeeklyGlobalArtists =
@@ -365,7 +371,10 @@ const previousWeeklyGlobalArtists =
       x.type ===
       "weekly"
       &&
-      x.artist
+      (
+        x.artist ||
+        x.artists
+      )
   );
 
 const previousWeeklyGlobalAlbums =
@@ -376,6 +385,10 @@ const previousWeeklyGlobalAlbums =
       &&
       x.album
   );
+
+/* ===========================
+   REGIONAL DATA
+=========================== */
 
 const songs =
   songsData.entries ?? [];
@@ -415,6 +428,10 @@ const previousWeeklyAlbums =
     "data/history/previous-weekly-album.json",
     {}
   )?.entries ?? [];
+
+/* ===========================
+   BUILD REGIONAL
+=========================== */
 
 const enhancedSongs =
   buildSong(
