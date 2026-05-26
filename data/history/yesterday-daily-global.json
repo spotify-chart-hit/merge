@@ -2,8 +2,7 @@
   "dailyLastUpdate": "2026-05-23",
   "weeklyLastUpdate": "2026-05-21",
   "entries": [
-
-{
+    {
       "country": "GLOBAL",
       "type": "weekly",
       "rank": 151,
@@ -20,7 +19,7 @@
       "direction": "down",
       "entryStatus": "MOVED_DOWN"
     },
-        {
+    {
       "country": "GLOBAL",
       "type": "daily",
       "rank": 191,
@@ -36,7 +35,6 @@
       "rankChange": 192,
       "direction": "down",
       "entryStatus": "RE_ENTRY"
-    },
-    
+    }
   ]
 }
