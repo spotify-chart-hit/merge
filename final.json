@@ -399,8 +399,8 @@
         "rankChange": 82,
         "direction": "up",
         "entryStatus": "MOVED_UP",
-        "previousStreams": 0,
-        "streamChange": 1446881
+        "previousStreams": 1273749,
+        "streamChange": 173132
       }
     ],
     "weekly": [
@@ -1217,8 +1217,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 0,
-        "streamChange": 1446881
+        "previousStreams": 1273749,
+        "streamChange": 173132
       }
     ],
     "weekly": [
