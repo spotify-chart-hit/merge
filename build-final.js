@@ -1,22 +1,34 @@
 const fs = require("fs");
 
-function load(file, fallback = []) {
+function load(
+  file,
+  fallback = []
+) {
   try {
-    if (!fs.existsSync(file)) {
+    if (
+      !fs.existsSync(file)
+    ) {
       return fallback;
     }
 
     return JSON.parse(
-      fs.readFileSync(file, "utf8")
+      fs.readFileSync(
+        file,
+        "utf8"
+      )
     );
   } catch {
     return fallback;
   }
 }
 
-function getRankChange(current, previous) {
+function getRankChange(
+  current,
+  previous
+) {
   if (
-    previous === undefined ||
+    previous ===
+      undefined ||
     previous === null
   ) {
     return {
@@ -25,7 +37,9 @@ function getRankChange(current, previous) {
     };
   }
 
-  const diff = previous - current;
+  const diff =
+    previous -
+    current;
 
   if (diff > 0) {
     return {
@@ -36,8 +50,12 @@ function getRankChange(current, previous) {
 
   if (diff < 0) {
     return {
-      change: Math.abs(diff),
-      direction: "down"
+      change:
+        Math.abs(
+          diff
+        ),
+      direction:
+        "down"
     };
   }
 
@@ -47,131 +65,205 @@ function getRankChange(current, previous) {
   };
 }
 
+/* ===========================
+   BUILD SONG
+=========================== */
+
 function buildSong(
   today,
   dailyHistory,
   weeklyHistory
 ) {
-  const dailyMap = new Map();
-  const weeklyMap = new Map();
+  const dailyMap =
+    new Map();
 
-  for (const item of dailyHistory) {
+  const weeklyMap =
+    new Map();
+
+  for (
+    const item of
+    dailyHistory
+  ) {
     const key =
       `${item.country}-${item.type}-${item.track}`;
 
-    dailyMap.set(key, item);
+    dailyMap.set(
+      key,
+      item
+    );
   }
 
-  for (const item of weeklyHistory) {
+  for (
+    const item of
+    weeklyHistory
+  ) {
     const key =
       `${item.country}-${item.type}-${item.track}`;
 
-    weeklyMap.set(key, item);
+    weeklyMap.set(
+      key,
+      item
+    );
   }
 
-  return today.map(item => {
-    const key =
-      `${item.country}-${item.type}-${item.track}`;
+  return today.map(
+    item => {
+      const key =
+        `${item.country}-${item.type}-${item.track}`;
 
-    const old =
-      item.type === "daily"
-        ? dailyMap.get(key)
-        : weeklyMap.get(key);
+      const old =
+        item.type ===
+        "daily"
+          ? dailyMap.get(
+              key
+            )
+          : weeklyMap.get(
+              key
+            );
 
-    const rank =
-      getRankChange(
-        item.rank,
-        item.previousRank
-      );
+      const rank =
+        getRankChange(
+          item.rank,
+          item.previousRank
+        );
 
-    const previousStreams =
-      Number(old?.streams ?? 0);
+      const previousStreams =
+        Number(
+          old?.streams ??
+            0
+        );
 
-    const currentStreams =
-      Number(item.streams ?? 0);
+      const currentStreams =
+        Number(
+          item.streams ??
+            0
+        );
 
-    const streamChange =
-      currentStreams -
-      previousStreams;
+      const streamChange =
+        currentStreams -
+        previousStreams;
 
-    return {
-      ...item,
+      return {
+        ...item,
 
-      songGroup:
-        albumMap[item.track]
-        || "Other",
+        songGroup:
+          albumMap[
+            item.track
+          ] ||
+          "Other",
 
-      rankChange:
-        rank.change,
+        rankChange:
+          rank.change,
 
-      direction:
-        rank.direction,
+        direction:
+          rank.direction,
 
-      previousStreams,
+        previousStreams,
 
-      streamChange
-    };
-  });
+        streamChange
+      };
+    }
+  );
 }
+
+/* ===========================
+   BUILD ARTIST
+=========================== */
 
 function buildArtist(
   today,
   dailyHistory,
   weeklyHistory
 ) {
-  const dailyMap = new Map();
-  const weeklyMap = new Map();
+  const dailyMap =
+    new Map();
 
-  for (const item of dailyHistory) {
+  const weeklyMap =
+    new Map();
+
+  for (
+    const item of
+    dailyHistory
+  ) {
     const key =
       `${item.country}-${item.type}-${item.artist}`;
 
-    dailyMap.set(key, item);
+    dailyMap.set(
+      key,
+      item
+    );
   }
 
-  for (const item of weeklyHistory) {
+  for (
+    const item of
+    weeklyHistory
+  ) {
     const key =
       `${item.country}-${item.type}-${item.artist}`;
 
-    weeklyMap.set(key, item);
+    weeklyMap.set(
+      key,
+      item
+    );
   }
 
-  return today.map(item => {
-    const key =
-      `${item.country}-${item.type}-${item.artist}`;
+  return today.map(
+    item => {
+      const key =
+        `${item.country}-${item.type}-${item.artist}`;
 
-    const old =
-      item.type === "daily"
-        ? dailyMap.get(key)
-        : weeklyMap.get(key);
+      const old =
+        item.type ===
+        "daily"
+          ? dailyMap.get(
+              key
+            )
+          : weeklyMap.get(
+              key
+            );
 
-    const rank =
-      getRankChange(
-        item.rank,
-        item.previousRank
-      );
+      const rank =
+        getRankChange(
+          item.rank,
+          item.previousRank
+        );
 
-    const previousStreams =
-      Number(old?.streams ?? 0);
+      const previousStreams =
+        Number(
+          old?.streams ??
+            0
+        );
 
-    const currentStreams =
-      Number(item.streams ?? 0);
+      const currentStreams =
+        Number(
+          item.streams ??
+            0
+        );
 
-    const streamChange =
-      currentStreams -
-      previousStreams;
+      const streamChange =
+        currentStreams -
+        previousStreams;
 
-    return {
-      ...item,
-      rankChange:
-        rank.change,
-      direction:
-        rank.direction,
-      previousStreams,
-      streamChange
-    };
-  });
+      return {
+        ...item,
+
+        rankChange:
+          rank.change,
+
+        direction:
+          rank.direction,
+
+        previousStreams,
+
+        streamChange
+      };
+    }
+  );
 }
+
+/* ===========================
+   BUILD ALBUM
+=========================== */
 
 function buildAlbum(
   today,
@@ -180,7 +272,10 @@ function buildAlbum(
   const weeklyMap =
     new Map();
 
-  for (const item of weeklyHistory) {
+  for (
+    const item of
+    weeklyHistory
+  ) {
     const key =
       `${item.country}-${item.album}`;
 
@@ -190,41 +285,166 @@ function buildAlbum(
     );
   }
 
-  return today.map(item => {
-    const key =
-      `${item.country}-${item.album}`;
+  return today.map(
+    item => {
+      const key =
+        `${item.country}-${item.album}`;
 
-    const old =
-      weeklyMap.get(key);
+      const old =
+        weeklyMap.get(
+          key
+        );
 
-    const rank =
-      getRankChange(
-        item.rank,
-        item.previousRank
-      );
+      const rank =
+        getRankChange(
+          item.rank,
+          item.previousRank
+        );
 
-    const previousStreams =
-      Number(old?.streams ?? 0);
+      const previousStreams =
+        Number(
+          old?.streams ??
+            0
+        );
 
-    const currentStreams =
-      Number(item.streams ?? 0);
+      const currentStreams =
+        Number(
+          item.streams ??
+            0
+        );
 
-    const streamChange =
-      currentStreams -
-      previousStreams;
+      const streamChange =
+        currentStreams -
+        previousStreams;
 
-    return {
-      ...item,
-      rankChange:
-        rank.change,
-      direction:
-        rank.direction,
-      previousStreams,
-      streamChange
-    };
-  });
-      }
+      return {
+        ...item,
 
+        rankChange:
+          rank.change,
+
+        direction:
+          rank.direction,
+
+        previousStreams,
+
+        streamChange
+      };
+    }
+  );
+}
+
+/* ===========================
+   BUILD GLOBAL
+=========================== */
+
+function buildGlobal(
+  today,
+  dailyHistory,
+  weeklyHistory
+) {
+  const dailyMap =
+    new Map();
+
+  const weeklyMap =
+    new Map();
+
+  function getKey(
+    item
+  ) {
+    const entity =
+      item.track ||
+      item.artist ||
+      item.album ||
+      "unknown";
+
+    return `${item.type}-${entity}`;
+  }
+
+  for (
+    const item of
+    dailyHistory
+  ) {
+    dailyMap.set(
+      getKey(item),
+      item
+    );
+  }
+
+  for (
+    const item of
+    weeklyHistory
+  ) {
+    weeklyMap.set(
+      getKey(item),
+      item
+    );
+  }
+
+  return today.map(
+    item => {
+      const old =
+        item.type ===
+        "daily"
+          ? dailyMap.get(
+              getKey(
+                item
+              )
+            )
+          : weeklyMap.get(
+              getKey(
+                item
+              )
+            );
+
+      const rank =
+        getRankChange(
+          item.rank,
+          item.previousRank
+        );
+
+      const previousStreams =
+        Number(
+          old?.streams ??
+            0
+        );
+
+      const currentStreams =
+        Number(
+          item.streams ??
+            0
+        );
+
+      const streamChange =
+        currentStreams -
+        previousStreams;
+
+      return {
+        ...item,
+
+        songGroup:
+          item.track
+            ? (
+                albumMap[
+                  item.track
+                ] ||
+                "Other"
+              )
+            : null,
+
+        rankChange:
+          rank.change,
+
+        direction:
+          rank.direction,
+
+        previousStreams,
+
+        streamChange
+      };
+    }
+  );
+          }
 /* ===========================
    JIMIN ALBUM MAP
 =========================== */
@@ -232,48 +452,111 @@ function buildAlbum(
 const albumMap = {
 
   // MUSE
-  "Who": "MUSE",
-  "Who (Rock Remix)": "MUSE",
-  "Who (Acoustic Remix)": "MUSE",
-  "Who (Shibuyakei Remix)": "MUSE",
-  "Who (Instrumental)": "MUSE",
-  "Who (Funky Remix)": "MUSE",
-  "Who (Beautiful Mind Remix)": "MUSE",
-  "Be Mine": "MUSE",
-  "Smeraldo Garden Marching Band (feat. Loco)": "MUSE",
-  "Rebirth (Intro)": "MUSE",
-  "Interlude : Showtime": "MUSE",
+  "Who":
+    "MUSE",
+
+  "Who (Rock Remix)":
+    "MUSE",
+
+  "Who (Acoustic Remix)":
+    "MUSE",
+
+  "Who (Shibuyakei Remix)":
+    "MUSE",
+
+  "Who (Instrumental)":
+    "MUSE",
+
+  "Who (Funky Remix)":
+    "MUSE",
+
+  "Who (Beautiful Mind Remix)":
+    "MUSE",
+
+  "Be Mine":
+    "MUSE",
+
+  "Smeraldo Garden Marching Band (feat. Loco)":
+    "MUSE",
+
+  "Rebirth (Intro)":
+    "MUSE",
+
+  "Interlude : Showtime":
+    "MUSE",
 
   // FACE
-  "Like Crazy": "FACE",
-  "Like Crazy (English Version)": "FACE",
-  "Like Crazy (Deep House Remix)": "FACE",
-  "Like Crazy (UK Garage Remix)": "FACE",
-  "Like Crazy (Instrumental)": "FACE",
-  "Set Me Free Pt.2": "FACE",
-  "Face-off": "FACE",
-  "Alone": "FACE",
-  "Interlude : Dive": "FACE",
-  "Promise": "FACE",
+  "Like Crazy":
+    "FACE",
+
+  "Like Crazy (English Version)":
+    "FACE",
+
+  "Like Crazy (Deep House Remix)":
+    "FACE",
+
+  "Like Crazy (UK Garage Remix)":
+    "FACE",
+
+  "Like Crazy (Instrumental)":
+    "FACE",
+
+  "Set Me Free Pt.2":
+    "FACE",
+
+  "Face-off":
+    "FACE",
+
+  "Alone":
+    "FACE",
+
+  "Interlude : Dive":
+    "FACE",
+
+  "Promise":
+    "FACE",
 
   // Single / OST
-  "Closer Than This": "Single",
-  "Christmas Love": "Single",
-  "With you": "OST",
-  "With you - Instrumental": "OST",
+  "Closer Than This":
+    "Single",
+
+  "Christmas Love":
+    "Single",
+
+  "With you":
+    "OST",
+
+  "With you - Instrumental":
+    "OST",
 
   // Angel
-  "Angel Pt. 1 (feat. Kodak Black, NLE Choppa, Jimin of BTS, JVKE & Muni Long)": "ANGEL",
-  "Angel Pt. 2 (feat. Jimin of BTS & JVKE feat. Charlie Puth)": "ANGEL",
-  "Angel Pt. 1 (feat. Jimin of BTS, JVKE & Muni Long) - Track Version": "ANGEL",
-  "Angel Pt. 1 (feat. Jimin of BTS, JVKE & Muni Long) - Sped Up": "ANGEL",
-  "Angel Pt. 2 - Acoustic Version": "ANGEL",
-  "Angel (feat. Muni Long, JVKE, NLE Choppa) (Anniversary Edition)": "ANGEL",
-  "Angel Pt. 2 - Sped Up": "ANGEL",
+  "Angel Pt. 1 (feat. Kodak Black, NLE Choppa, Jimin of BTS, JVKE & Muni Long)":
+    "ANGEL",
+
+  "Angel Pt. 2 (feat. Jimin of BTS & JVKE feat. Charlie Puth)":
+    "ANGEL",
+
+  "Angel Pt. 1 (feat. Jimin of BTS, JVKE & Muni Long) - Track Version":
+    "ANGEL",
+
+  "Angel Pt. 1 (feat. Jimin of BTS, JVKE & Muni Long) - Sped Up":
+    "ANGEL",
+
+  "Angel Pt. 2 - Acoustic Version":
+    "ANGEL",
+
+  "Angel (feat. Muni Long, JVKE, NLE Choppa) (Anniversary Edition)":
+    "ANGEL",
+
+  "Angel Pt. 2 - Sped Up":
+    "ANGEL",
 
   // Feature
-  "VIBE (feat. Jimin of BTS)": "FEATURE",
-  "Slow Dance (feat. Sofia Carson)": "FEATURE"
+  "VIBE (feat. Jimin of BTS)":
+    "FEATURE",
+
+  "Slow Dance (feat. Sofia Carson)":
+    "FEATURE"
 };
 
 /* ===========================
@@ -281,22 +564,38 @@ const albumMap = {
 =========================== */
 
 const songsData =
-  load("data/song.json", {});
+  load(
+    "data/song.json",
+    {}
+  );
 
 const artistsData =
-  load("data/artist.json", {});
+  load(
+    "data/artist.json",
+    {}
+  );
 
 const albumsData =
-  load("data/album.json", {});
+  load(
+    "data/album.json",
+    {}
+  );
 
 const songs =
-  songsData.entries ?? [];
+  songsData
+    ?.entries ?? [];
 
 const artists =
-  artistsData.entries ?? [];
+  artistsData
+    ?.entries ?? [];
 
 const albums =
-  albumsData.entries ?? [];
+  albumsData
+    ?.entries ?? [];
+
+/* ===========================
+   REGIONAL HISTORY
+=========================== */
 
 const yesterdayDailySongs =
   load(
@@ -329,7 +628,7 @@ const previousWeeklyAlbums =
   )?.entries ?? [];
 
 /* ===========================
-   GLOBAL DATA (STANDALONE)
+   GLOBAL DATA
 =========================== */
 
 const globalData =
@@ -339,7 +638,12 @@ const globalData =
   );
 
 const globalEntries =
-  globalData.entries ?? [];
+  globalData
+    ?.entries ?? [];
+
+/* ===========================
+   GLOBAL HISTORY
+=========================== */
 
 const yesterdayGlobal =
   load(
@@ -353,26 +657,21 @@ const previousWeeklyGlobal =
     {}
   )?.entries ?? [];
 
+/* ===========================
+   GLOBAL SOURCE
+=========================== */
+
 const globalSongs =
-  globalEntries.filter(
-    x => x.track
-  );
+  globalEntries ??
+  [];
 
 const yesterdayDailyGlobalSongs =
-  yesterdayGlobal.filter(
-    x =>
-      x.type === "daily"
-      &&
-      x.track
-  );
+  yesterdayGlobal ??
+  [];
 
 const previousWeeklyGlobalSongs =
-  previousWeeklyGlobal.filter(
-    x =>
-      x.type === "weekly"
-      &&
-      x.track
-  );
+  previousWeeklyGlobal ??
+  [];
 /* ===========================
    BUILD REGIONAL
 =========================== */
@@ -397,17 +696,6 @@ const enhancedAlbums =
     previousWeeklyAlbums
   );
 
-/* ===========================
-   BUILD GLOBAL
-=========================== */
-
-const enhancedGlobalSongs =
-  buildSong(
-    globalSongs,
-    yesterdayDailyGlobalSongs,
-    previousWeeklyGlobalSongs
-  );
-
 const dailySongs =
   enhancedSongs.filter(
     x =>
@@ -422,16 +710,33 @@ const weeklySongs =
       "weekly"
   );
 
+/* ===========================
+   BUILD GLOBAL
+=========================== */
+
+const enhancedGlobalSongs =
+  buildGlobal(
+    globalSongs,
+    yesterdayDailyGlobalSongs,
+    previousWeeklyGlobalSongs
+  );
+
+/* ===========================
+   FINAL JSON
+=========================== */
+
 const final = {
 
   global: {
 
     dailyLastUpdate:
-      globalData?.dailyLastUpdate
+      globalData
+        ?.dailyLastUpdate
       ?? null,
 
     weeklyLastUpdate:
-      globalData?.weeklyLastUpdate
+      globalData
+        ?.weeklyLastUpdate
       ?? null,
 
     daily:
@@ -450,8 +755,10 @@ const final = {
   },
 
   album: {
+
     weeklyLastUpdate:
-      albumsData?.weeklyLastUpdate
+      albumsData
+        ?.weeklyLastUpdate
       ?? null,
 
     weekly:
@@ -461,11 +768,13 @@ const final = {
   artist: {
 
     dailyLastUpdate:
-      artistsData?.dailyLastUpdate
+      artistsData
+        ?.dailyLastUpdate
       ?? null,
 
     weeklyLastUpdate:
-      artistsData?.weeklyLastUpdate
+      artistsData
+        ?.weeklyLastUpdate
       ?? null,
 
     daily:
@@ -486,11 +795,13 @@ const final = {
   song: {
 
     dailyLastUpdate:
-      songsData?.dailyLastUpdate
+      songsData
+        ?.dailyLastUpdate
       ?? null,
 
     weeklyLastUpdate:
-      songsData?.weeklyLastUpdate
+      songsData
+        ?.weeklyLastUpdate
       ?? null,
 
     daily:
@@ -501,8 +812,13 @@ const final = {
   }
 };
 
+/* ===========================
+   WRITE FILE
+=========================== */
+
 fs.writeFileSync(
   "final.json",
+
   JSON.stringify(
     final,
     null,
@@ -513,3 +829,4 @@ fs.writeFileSync(
 console.log(
   "final.json updated 😍"
 );
+
