@@ -1,4 +1,52 @@
 {
+  "global": {
+    "dailyLastUpdate": "2026-05-25",
+    "weeklyLastUpdate": "2026-05-21",
+    "daily": [
+      {
+        "country": "GLOBAL",
+        "type": "daily",
+        "rank": 111,
+        "previousRank": 109,
+        "peakRank": 1,
+        "appearances": 675,
+        "streams": "1497310",
+        "track": "Who",
+        "artists": [
+          "Jimin"
+        ],
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 2,
+        "direction": "down",
+        "entryStatus": "MOVED_DOWN",
+        "songGroup": "MUSE",
+        "previousStreams": 1273749,
+        "streamChange": 223561
+      }
+    ],
+    "weekly": [
+      {
+        "country": "GLOBAL",
+        "type": "weekly",
+        "rank": 151,
+        "previousRank": 130,
+        "peakRank": 1,
+        "appearances": 96,
+        "streams": "10033863",
+        "track": "Who",
+        "artists": [
+          "Jimin"
+        ],
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 21,
+        "direction": "down",
+        "entryStatus": "MOVED_DOWN",
+        "songGroup": "MUSE",
+        "previousStreams": 10255004,
+        "streamChange": -221141
+      }
+    ]
+  },
   "album": {
     "weeklyLastUpdate": "2026-05-21",
     "weekly": [
@@ -367,25 +415,6 @@
         "entryStatus": "MOVED_UP",
         "previousStreams": 0,
         "streamChange": 0
-      },
-      {
-        "country": "GLOBAL",
-        "type": "daily",
-        "rank": 111,
-        "previousRank": 109,
-        "peakRank": 1,
-        "appearances": 675,
-        "streams": "1497310",
-        "track": "Who",
-        "artists": [
-          "Jimin"
-        ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 2,
-        "direction": "down",
-        "entryStatus": "MOVED_DOWN",
-        "previousStreams": 1273749,
-        "streamChange": 223561
       }
     ],
     "weekly": [
@@ -598,25 +627,6 @@
         "entryStatus": "MOVED_DOWN",
         "previousStreams": 0,
         "streamChange": 0
-      },
-      {
-        "country": "GLOBAL",
-        "type": "weekly",
-        "rank": 151,
-        "previousRank": 130,
-        "peakRank": 1,
-        "appearances": 96,
-        "streams": "10033863",
-        "track": "Who",
-        "artists": [
-          "Jimin"
-        ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 21,
-        "direction": "down",
-        "entryStatus": "MOVED_DOWN",
-        "previousStreams": 10255004,
-        "streamChange": -221141
       }
     ]
   },
@@ -1225,26 +1235,6 @@
         "songGroup": "Single",
         "previousStreams": 7812,
         "streamChange": -1026
-      },
-      {
-        "country": "GLOBAL",
-        "type": "daily",
-        "rank": 111,
-        "previousRank": 109,
-        "peakRank": 1,
-        "appearances": 675,
-        "streams": "1497310",
-        "track": "Who",
-        "artists": [
-          "Jimin"
-        ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 2,
-        "direction": "down",
-        "entryStatus": "MOVED_DOWN",
-        "songGroup": "MUSE",
-        "previousStreams": 1273749,
-        "streamChange": 223561
       }
     ],
     "weekly": [
@@ -1809,26 +1799,6 @@
         "songGroup": "MUSE",
         "previousStreams": 377265,
         "streamChange": -23137
-      },
-      {
-        "country": "GLOBAL",
-        "type": "weekly",
-        "rank": 151,
-        "previousRank": 130,
-        "peakRank": 1,
-        "appearances": 96,
-        "streams": "10033863",
-        "track": "Who",
-        "artists": [
-          "Jimin"
-        ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 21,
-        "direction": "down",
-        "entryStatus": "MOVED_DOWN",
-        "songGroup": "MUSE",
-        "previousStreams": 10255004,
-        "streamChange": -221141
       }
     ]
   }
