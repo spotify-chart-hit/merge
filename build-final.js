@@ -348,24 +348,15 @@ function buildGlobal(
   const weeklyMap =
     new Map();
 
-  function getKey(
-    item
-  ) {
-    const entity =
-      item.track ||
-      item.artist ||
-      item.album ||
-      "unknown";
-
-    return `${item.type}-${entity}`;
-  }
-
   for (
     const item of
     dailyHistory
   ) {
+    const key =
+      `${item.country}-${item.type}-${item.track}`;
+
     dailyMap.set(
-      getKey(item),
+      key,
       item
     );
   }
@@ -374,8 +365,11 @@ function buildGlobal(
     const item of
     weeklyHistory
   ) {
+    const key =
+      `${item.country}-${item.type}-${item.track}`;
+
     weeklyMap.set(
-      getKey(item),
+      key,
       item
     );
   }
@@ -383,18 +377,17 @@ function buildGlobal(
   return today.map(
     item => {
 
+      const key =
+        `${item.country}-${item.type}-${item.track}`;
+
       const old =
         item.type ===
         "daily"
           ? dailyMap.get(
-              getKey(
-                item
-              )
+              key
             )
           : weeklyMap.get(
-              getKey(
-                item
-              )
+              key
             );
 
       const rank =
@@ -423,14 +416,10 @@ function buildGlobal(
         ...item,
 
         songGroup:
-          item.track
-            ? (
-                albumMap[
-                  item.track
-                ] ||
-                "Other"
-              )
-            : null,
+          albumMap[
+            item.track
+          ] ||
+          "Other",
 
         rankChange:
           rank.change,
@@ -638,41 +627,25 @@ const globalData =
     {}
   );
 
-const globalEntries = [
-
-  ...(globalData?.daily ?? []),
-
-  ...(globalData?.weekly ?? [])
-
-];
+const globalEntries =
+  globalData
+    ?.entries ?? [];
 
 /* ===========================
    GLOBAL HISTORY
 =========================== */
 
-const yesterdayGlobalData =
+const yesterdayGlobal =
   load(
     "data/history/yesterday-daily-global.json",
     {}
-  );
+  )?.entries ?? [];
 
-const previousWeeklyGlobalData =
+const previousWeeklyGlobal =
   load(
     "data/history/previous-weekly-global.json",
     {}
-  );
-
-const yesterdayGlobal = [
-
-  ...(yesterdayGlobalData?.daily ?? [])
-
-];
-
-const previousWeeklyGlobal = [
-
-  ...(previousWeeklyGlobalData?.weekly ?? [])
-
-];
+  )?.entries ?? [];
 
 /* ===========================
    GLOBAL SOURCE
@@ -689,6 +662,7 @@ const yesterdayDailyGlobalSongs =
 const previousWeeklyGlobalSongs =
   previousWeeklyGlobal ??
   [];
+
 /* ===========================
    BUILD REGIONAL
 =========================== */
@@ -846,3 +820,5 @@ fs.writeFileSync(
 console.log(
   "final.json updated 😍"
 );
+
+
