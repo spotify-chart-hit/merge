@@ -105,6 +105,10 @@ fs.readFileSync(
 
 );
 
+/* ===========================
+   SAVE DAILY HISTORY
+=========================== */
+
 if (
 
 oldData.dailyLastUpdate
@@ -116,7 +120,7 @@ chartDate.daily
 
 fs.writeFileSync(
 
-"data/history/yesterday-global.json",
+"data/history/yesterday-daily-global.json",
 
 JSON.stringify(
 oldData,
@@ -126,7 +130,15 @@ null,
 
 );
 
+console.log(
+"daily global history updated 😍"
+);
+
 }
+
+/* ===========================
+   SAVE WEEKLY HISTORY
+=========================== */
 
 if (
 
@@ -149,9 +161,17 @@ null,
 
 );
 
+console.log(
+"weekly global history updated 😍"
+);
+
 }
 
 }
+
+/* ===========================
+   SAVE NEW GLOBAL DATA
+=========================== */
 
 fs.writeFileSync(
 
