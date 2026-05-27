@@ -86,6 +86,17 @@ function buildSong(
       const old =
         source.find(
           x =>
+
+            x.country ===
+            item.country
+
+            &&
+
+            x.type ===
+            item.type
+
+            &&
+
             x.track ===
             item.track
         );
@@ -156,6 +167,17 @@ function buildArtist(
       const old =
         source.find(
           x =>
+
+            x.country ===
+            item.country
+
+            &&
+
+            x.type ===
+            item.type
+
+            &&
+
             x.artist ===
             item.artist
         );
@@ -213,6 +235,12 @@ function buildAlbum(
       const old =
         weeklyHistory.find(
           x =>
+
+            x.country ===
+            item.country
+
+            &&
+
             x.album ===
             item.album
         );
@@ -277,6 +305,13 @@ function buildGlobal(
       const old =
         source.find(
           x => {
+
+            if (
+              x.type !==
+              item.type
+            ) {
+              return false;
+            }
 
             if (
               item.track
@@ -356,8 +391,7 @@ function buildGlobal(
       };
     }
   );
-  }
-
+          }
 /* ===========================
    JIMIN ALBUM MAP
 =========================== */
@@ -634,7 +668,6 @@ const enhancedGlobalSongs =
     yesterdayDailyGlobalSongs,
     previousWeeklyGlobalSongs
   );
-
 /* ===========================
    FINAL JSON
 =========================== */
@@ -743,5 +776,4 @@ fs.writeFileSync(
 console.log(
   "final.json updated 😍"
 );
-
 
