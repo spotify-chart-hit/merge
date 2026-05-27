@@ -74,52 +74,21 @@ function buildSong(
   dailyHistory,
   weeklyHistory
 ) {
-  const dailyMap =
-    new Map();
-
-  const weeklyMap =
-    new Map();
-
-  for (
-    const item of
-    dailyHistory
-  ) {
-    const key =
-      `${item.country}-${item.type}-${item.track}`;
-
-    dailyMap.set(
-      key,
-      item
-    );
-  }
-
-  for (
-    const item of
-    weeklyHistory
-  ) {
-    const key =
-      `${item.country}-${item.type}-${item.track}`;
-
-    weeklyMap.set(
-      key,
-      item
-    );
-  }
-
   return today.map(
     item => {
-      const key =
-        `${item.country}-${item.type}-${item.track}`;
 
-      const old =
+      const source =
         item.type ===
         "daily"
-          ? dailyMap.get(
-              key
-            )
-          : weeklyMap.get(
-              key
-            );
+          ? dailyHistory
+          : weeklyHistory;
+
+      const old =
+        source.find(
+          x =>
+            x.track ===
+            item.track
+        );
 
       const rank =
         getRankChange(
@@ -130,13 +99,13 @@ function buildSong(
       const previousStreams =
         Number(
           old?.streams ??
-            0
+          0
         );
 
       const currentStreams =
         Number(
           item.streams ??
-            0
+          0
         );
 
       const streamChange =
@@ -165,6 +134,7 @@ function buildSong(
     }
   );
 }
+
 /* ===========================
    BUILD ARTIST
 =========================== */
@@ -174,52 +144,21 @@ function buildArtist(
   dailyHistory,
   weeklyHistory
 ) {
-  const dailyMap =
-    new Map();
-
-  const weeklyMap =
-    new Map();
-
-  for (
-    const item of
-    dailyHistory
-  ) {
-    const key =
-      `${item.country}-${item.type}-${item.artist}`;
-
-    dailyMap.set(
-      key,
-      item
-    );
-  }
-
-  for (
-    const item of
-    weeklyHistory
-  ) {
-    const key =
-      `${item.country}-${item.type}-${item.artist}`;
-
-    weeklyMap.set(
-      key,
-      item
-    );
-  }
-
   return today.map(
     item => {
-      const key =
-        `${item.country}-${item.type}-${item.artist}`;
 
-      const old =
+      const source =
         item.type ===
         "daily"
-          ? dailyMap.get(
-              key
-            )
-          : weeklyMap.get(
-              key
-            );
+          ? dailyHistory
+          : weeklyHistory;
+
+      const old =
+        source.find(
+          x =>
+            x.artist ===
+            item.artist
+        );
 
       const rank =
         getRankChange(
@@ -230,13 +169,13 @@ function buildArtist(
       const previousStreams =
         Number(
           old?.streams ??
-            0
+          0
         );
 
       const currentStreams =
         Number(
           item.streams ??
-            0
+          0
         );
 
       const streamChange =
@@ -268,30 +207,14 @@ function buildAlbum(
   today,
   weeklyHistory
 ) {
-  const weeklyMap =
-    new Map();
-
-  for (
-    const item of
-    weeklyHistory
-  ) {
-    const key =
-      `${item.country}-${item.album}`;
-
-    weeklyMap.set(
-      key,
-      item
-    );
-  }
-
   return today.map(
     item => {
-      const key =
-        `${item.country}-${item.album}`;
 
       const old =
-        weeklyMap.get(
-          key
+        weeklyHistory.find(
+          x =>
+            x.album ===
+            item.album
         );
 
       const rank =
@@ -303,13 +226,13 @@ function buildAlbum(
       const previousStreams =
         Number(
           old?.streams ??
-            0
+          0
         );
 
       const currentStreams =
         Number(
           item.streams ??
-            0
+          0
         );
 
       const streamChange =
@@ -342,53 +265,49 @@ function buildGlobal(
   dailyHistory,
   weeklyHistory
 ) {
-  const dailyMap =
-    new Map();
-
-  const weeklyMap =
-    new Map();
-
-  for (
-    const item of
-    dailyHistory
-  ) {
-    const key =
-      `${item.country}-${item.type}-${item.track}`;
-
-    dailyMap.set(
-      key,
-      item
-    );
-  }
-
-  for (
-    const item of
-    weeklyHistory
-  ) {
-    const key =
-      `${item.country}-${item.type}-${item.track}`;
-
-    weeklyMap.set(
-      key,
-      item
-    );
-  }
-
   return today.map(
     item => {
 
-      const key =
-        `${item.country}-${item.type}-${item.track}`;
-
-      const old =
+      const source =
         item.type ===
         "daily"
-          ? dailyMap.get(
-              key
-            )
-          : weeklyMap.get(
-              key
-            );
+          ? dailyHistory
+          : weeklyHistory;
+
+      const old =
+        source.find(
+          x => {
+
+            if (
+              item.track
+            ) {
+              return (
+                x.track ===
+                item.track
+              );
+            }
+
+            if (
+              item.artist
+            ) {
+              return (
+                x.artist ===
+                item.artist
+              );
+            }
+
+            if (
+              item.album
+            ) {
+              return (
+                x.album ===
+                item.album
+              );
+            }
+
+            return false;
+          }
+        );
 
       const rank =
         getRankChange(
@@ -399,13 +318,13 @@ function buildGlobal(
       const previousStreams =
         Number(
           old?.streams ??
-            0
+          0
         );
 
       const currentStreams =
         Number(
           item.streams ??
-            0
+          0
         );
 
       const streamChange =
@@ -416,10 +335,14 @@ function buildGlobal(
         ...item,
 
         songGroup:
-          albumMap[
-            item.track
-          ] ||
-          "Other",
+          item.track
+            ? (
+                albumMap[
+                  item.track
+                ] ||
+                "Other"
+              )
+            : null,
 
         rankChange:
           rank.change,
@@ -433,7 +356,7 @@ function buildGlobal(
       };
     }
   );
-}
+  }
 
 /* ===========================
    JIMIN ALBUM MAP
