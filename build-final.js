@@ -165,7 +165,6 @@ function buildSong(
     }
   );
 }
-
 /* ===========================
    BUILD ARTIST
 =========================== */
@@ -383,6 +382,7 @@ function buildGlobal(
 
   return today.map(
     item => {
+
       const old =
         item.type ===
         "daily"
@@ -444,7 +444,8 @@ function buildGlobal(
       };
     }
   );
-          }
+}
+
 /* ===========================
    JIMIN ALBUM MAP
 =========================== */
@@ -637,25 +638,41 @@ const globalData =
     {}
   );
 
-const globalEntries =
-  globalData
-    ?.entries ?? [];
+const globalEntries = [
+
+  ...(globalData?.daily ?? []),
+
+  ...(globalData?.weekly ?? [])
+
+];
 
 /* ===========================
    GLOBAL HISTORY
 =========================== */
 
-const yesterdayGlobal =
+const yesterdayGlobalData =
   load(
     "data/history/yesterday-daily-global.json",
     {}
-  )?.entries ?? [];
+  );
 
-const previousWeeklyGlobal =
+const previousWeeklyGlobalData =
   load(
     "data/history/previous-weekly-global.json",
     {}
-  )?.entries ?? [];
+  );
+
+const yesterdayGlobal = [
+
+  ...(yesterdayGlobalData?.daily ?? [])
+
+];
+
+const previousWeeklyGlobal = [
+
+  ...(previousWeeklyGlobalData?.weekly ?? [])
+
+];
 
 /* ===========================
    GLOBAL SOURCE
@@ -829,4 +846,3 @@ fs.writeFileSync(
 console.log(
   "final.json updated 😍"
 );
-
