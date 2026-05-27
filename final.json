@@ -676,7 +676,7 @@
     ]
   },
   "song": {
-    "dailyLastUpdate": "2026-05-25",
+    "dailyLastUpdate": "2026-05-26",
     "weeklyLastUpdate": "2026-05-21",
     "daily": [
       {
@@ -696,8 +696,8 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 11518,
-        "streamChange": 22
+        "previousStreams": 11540,
+        "streamChange": 0
       },
       {
         "country": "BG",
@@ -716,8 +716,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 4944,
-        "streamChange": 484
+        "previousStreams": 5428,
+        "streamChange": 0
       },
       {
         "country": "BG",
@@ -736,8 +736,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "FACE",
-        "previousStreams": 5228,
-        "streamChange": 2
+        "previousStreams": 5230,
+        "streamChange": 0
       },
       {
         "country": "BG",
@@ -756,8 +756,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "FACE",
-        "previousStreams": 5154,
-        "streamChange": -62
+        "previousStreams": 5092,
+        "streamChange": 0
       },
       {
         "country": "BG",
@@ -777,8 +777,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 3572,
-        "streamChange": 611
+        "previousStreams": 4183,
+        "streamChange": 0
       },
       {
         "country": "BG",
@@ -797,8 +797,8 @@
         "direction": "down",
         "entryStatus": "RE_ENTRY",
         "songGroup": "Single",
-        "previousStreams": 0,
-        "streamChange": 3163
+        "previousStreams": 3163,
+        "streamChange": 0
       },
       {
         "country": "BO",
@@ -817,8 +817,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 5205,
-        "streamChange": 2867
+        "previousStreams": 8072,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -837,8 +837,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 14640,
-        "streamChange": 84
+        "previousStreams": 14724,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -857,8 +857,8 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 7508,
-        "streamChange": 1731
+        "previousStreams": 9239,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -877,8 +877,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "FACE",
-        "previousStreams": 3435,
-        "streamChange": 793
+        "previousStreams": 4228,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -897,8 +897,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 2876,
-        "streamChange": 857
+        "previousStreams": 3733,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -917,8 +917,8 @@
         "direction": "down",
         "entryStatus": "RE_ENTRY",
         "songGroup": "MUSE",
-        "previousStreams": 0,
-        "streamChange": 1808
+        "previousStreams": 1808,
+        "streamChange": 0
       },
       {
         "country": "BY",
@@ -938,8 +938,8 @@
         "direction": "down",
         "entryStatus": "RE_ENTRY",
         "songGroup": "FEATURE",
-        "previousStreams": 0,
-        "streamChange": 1608
+        "previousStreams": 1608,
+        "streamChange": 0
       },
       {
         "country": "CL",
@@ -958,8 +958,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 219323,
-        "streamChange": 7390
+        "previousStreams": 226713,
+        "streamChange": 0
       },
       {
         "country": "CR",
@@ -978,8 +978,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 24790,
-        "streamChange": -2797
+        "previousStreams": 21993,
+        "streamChange": 0
       },
       {
         "country": "JP",
@@ -998,8 +998,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 179854,
-        "streamChange": -20872
+        "previousStreams": 158982,
+        "streamChange": 0
       },
       {
         "country": "KR",
@@ -1018,8 +1018,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 46069,
-        "streamChange": 1982
+        "previousStreams": 48051,
+        "streamChange": 0
       },
       {
         "country": "LV",
@@ -1038,8 +1038,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 6289,
-        "streamChange": 1114
+        "previousStreams": 7403,
+        "streamChange": 0
       },
       {
         "country": "LV",
@@ -1058,8 +1058,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 4361,
-        "streamChange": 823
+        "previousStreams": 5184,
+        "streamChange": 0
       },
       {
         "country": "PY",
@@ -1078,8 +1078,8 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 31568,
-        "streamChange": -3166
+        "previousStreams": 28402,
+        "streamChange": 0
       },
       {
         "country": "SA",
@@ -1098,8 +1098,8 @@
         "direction": "down",
         "entryStatus": "RE_ENTRY",
         "songGroup": "MUSE",
-        "previousStreams": 0,
-        "streamChange": 3523
+        "previousStreams": 3523,
+        "streamChange": 0
       },
       {
         "country": "SG",
@@ -1118,8 +1118,8 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 63698,
-        "streamChange": -13388
+        "previousStreams": 50310,
+        "streamChange": 0
       },
       {
         "country": "SG",
@@ -1138,8 +1138,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "FACE",
-        "previousStreams": 7990,
-        "streamChange": 1320
+        "previousStreams": 9310,
+        "streamChange": 0
       },
       {
         "country": "SV",
@@ -1158,8 +1158,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 19276,
-        "streamChange": -9948
+        "previousStreams": 9328,
+        "streamChange": 0
       },
       {
         "country": "TH",
@@ -1178,8 +1178,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 95936,
-        "streamChange": 20900
+        "previousStreams": 116836,
+        "streamChange": 0
       },
       {
         "country": "TW",
@@ -1198,8 +1198,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 51633,
-        "streamChange": 3246
+        "previousStreams": 54879,
+        "streamChange": 0
       },
       {
         "country": "UA",
@@ -1218,8 +1218,8 @@
         "direction": "down",
         "entryStatus": "RE_ENTRY",
         "songGroup": "MUSE",
-        "previousStreams": 0,
-        "streamChange": 5584
+        "previousStreams": 5584,
+        "streamChange": 0
       },
       {
         "country": "UY",
@@ -1238,8 +1238,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 6743,
-        "streamChange": 316
+        "previousStreams": 7059,
+        "streamChange": 0
       },
       {
         "country": "VE",
@@ -1258,8 +1258,8 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 52972,
-        "streamChange": -3950
+        "previousStreams": 49022,
+        "streamChange": 0
       },
       {
         "country": "VE",
@@ -1278,8 +1278,8 @@
         "direction": "down",
         "entryStatus": "MOVED_DOWN",
         "songGroup": "Single",
-        "previousStreams": 7812,
-        "streamChange": -1026
+        "previousStreams": 6786,
+        "streamChange": 0
       }
     ],
     "weekly": [
