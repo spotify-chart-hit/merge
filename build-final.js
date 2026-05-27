@@ -241,6 +241,11 @@ function buildAlbum(
 
             &&
 
+            x.type ===
+            item.type
+
+            &&
+
             x.album ===
             item.album
         );
@@ -304,44 +309,44 @@ function buildGlobal(
 
       const old =
         source.find(
-          x => {
+          x =>
 
-            if (
-              x.type !==
-              item.type
-            ) {
-              return false;
-            }
+            x.country ===
+            item.country
 
-            if (
-              item.track
-            ) {
-              return (
+            &&
+
+            x.type ===
+            item.type
+
+            &&
+
+            (
+              (
+                item.track
+                &&
                 x.track ===
                 item.track
-              );
-            }
+              )
 
-            if (
-              item.artist
-            ) {
-              return (
+              ||
+
+              (
+                item.artist
+                &&
                 x.artist ===
                 item.artist
-              );
-            }
+              )
 
-            if (
-              item.album
-            ) {
-              return (
+              ||
+
+              (
+                item.album
+                &&
                 x.album ===
                 item.album
-              );
-            }
-
-            return false;
-          }
+              )
+            )
         );
 
       const rank =
@@ -391,7 +396,8 @@ function buildGlobal(
       };
     }
   );
-          }
+}
+
 /* ===========================
    JIMIN ALBUM MAP
 =========================== */
@@ -605,22 +611,6 @@ const previousWeeklyGlobal =
   )?.entries ?? [];
 
 /* ===========================
-   GLOBAL SOURCE
-=========================== */
-
-const globalSongs =
-  globalEntries ??
-  [];
-
-const yesterdayDailyGlobalSongs =
-  yesterdayGlobal ??
-  [];
-
-const previousWeeklyGlobalSongs =
-  previousWeeklyGlobal ??
-  [];
-
-/* ===========================
    BUILD REGIONAL
 =========================== */
 
@@ -644,6 +634,17 @@ const enhancedAlbums =
     previousWeeklyAlbums
   );
 
+/* ===========================
+   BUILD GLOBAL
+=========================== */
+
+const enhancedGlobalSongs =
+  buildGlobal(
+    globalEntries,
+    yesterdayGlobal,
+    previousWeeklyGlobal
+  );
+
 const dailySongs =
   enhancedSongs.filter(
     x =>
@@ -658,16 +659,6 @@ const weeklySongs =
       "weekly"
   );
 
-/* ===========================
-   BUILD GLOBAL
-=========================== */
-
-const enhancedGlobalSongs =
-  buildGlobal(
-    globalSongs,
-    yesterdayDailyGlobalSongs,
-    previousWeeklyGlobalSongs
-  );
 /* ===========================
    FINAL JSON
 =========================== */
