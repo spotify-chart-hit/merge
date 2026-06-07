@@ -1,27 +1,27 @@
 {
   "global": {
-    "dailyLastUpdate": "2026-06-05",
+    "dailyLastUpdate": "2026-06-06",
     "weeklyLastUpdate": "2026-06-04",
     "daily": [
       {
         "country": "GLOBAL",
         "type": "daily",
-        "rank": 137,
-        "previousRank": 124,
+        "rank": 124,
+        "previousRank": 137,
         "peakRank": 1,
-        "appearances": 686,
-        "streams": "1464812",
+        "appearances": 687,
+        "streams": "1466177",
         "track": "Who",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
         "rankChange": 13,
-        "direction": "down",
-        "entryStatus": "MOVED_DOWN",
+        "direction": "up",
+        "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 1479281,
-        "streamChange": -14469
+        "previousStreams": 1464812,
+        "streamChange": 1365
       }
     ],
     "weekly": [
