@@ -1,38 +1,38 @@
 {
-  "dailyLastUpdate": "2026-06-03",
-  "weeklyLastUpdate": "2026-05-28",
+  "dailyLastUpdate": "2026-06-11",
+  "weeklyLastUpdate": "2026-06-04",
   "entries": [
     {
       "country": "GLOBAL",
       "type": "daily",
       "rank": 131,
-      "previousRank": 130,
+      "previousRank": 125,
       "peakRank": 1,
-      "appearances": 684,
-      "streams": "1465823",
+      "appearances": 692,
+      "streams": "1406274",
       "track": "Who",
       "artists": [
         "Jimin"
       ],
       "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-      "rankChange": 1,
+      "rankChange": 6,
       "direction": "down",
       "entryStatus": "MOVED_DOWN"
     },
     {
       "country": "GLOBAL",
       "type": "weekly",
-      "rank": 144,
-      "previousRank": 151,
+      "rank": 131,
+      "previousRank": 144,
       "peakRank": 1,
-      "appearances": 97,
-      "streams": "9844149",
+      "appearances": 98,
+      "streams": "9946538",
       "track": "Who",
       "artists": [
         "Jimin"
       ],
       "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-      "rankChange": 7,
+      "rankChange": 13,
       "direction": "up",
       "entryStatus": "MOVED_UP"
     }
