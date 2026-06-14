@@ -1,21 +1,21 @@
 {
-  "dailyLastUpdate": "2026-06-11",
+  "dailyLastUpdate": "2026-06-12",
   "weeklyLastUpdate": "2026-06-11",
   "entries": [
     {
       "country": "GLOBAL",
       "type": "daily",
-      "rank": 131,
-      "previousRank": 125,
+      "rank": 161,
+      "previousRank": 131,
       "peakRank": 1,
-      "appearances": 692,
-      "streams": "1406274",
+      "appearances": 693,
+      "streams": "1417696",
       "track": "Who",
       "artists": [
         "Jimin"
       ],
       "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-      "rankChange": 6,
+      "rankChange": 30,
       "direction": "down",
       "entryStatus": "MOVED_DOWN"
     },
