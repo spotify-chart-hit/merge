@@ -1,6 +1,6 @@
 {
   "global": {
-    "dailyLastUpdate": "2026-06-21",
+    "dailyLastUpdate": "2026-06-22",
     "weeklyLastUpdate": "2026-06-18",
     "daily": [
       {
@@ -20,8 +20,8 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 1255839,
-        "streamChange": -37468
+        "previousStreams": 1218371,
+        "streamChange": 0
       }
     ],
     "weekly": [
