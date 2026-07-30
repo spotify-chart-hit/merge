@@ -496,7 +496,7 @@
     ]
   },
   "song": {
-    "dailyLastUpdate": "2026-07-28",
+    "dailyLastUpdate": "2026-07-29",
     "weeklyLastUpdate": "2026-07-23",
     "daily": [
       {
@@ -505,8 +505,8 @@
         "rank": 1,
         "previousRank": 1,
         "peakRank": 1,
-        "appearances": 740,
-        "streams": "16643",
+        "appearances": 741,
+        "streams": "10514",
         "track": "Who",
         "artists": [
           "Jimin"
@@ -516,89 +516,68 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 8069,
-        "streamChange": 8574
+        "previousStreams": 16643,
+        "streamChange": -6129
       },
       {
         "country": "BY",
         "type": "daily",
-        "rank": 2,
-        "previousRank": 6,
+        "rank": 3,
+        "previousRank": 2,
         "peakRank": 2,
-        "appearances": 740,
-        "streams": "10135",
+        "appearances": 741,
+        "streams": "6535",
         "track": "Be Mine",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 4,
-        "direction": "up",
-        "entryStatus": "MOVED_UP",
+        "rankChange": 1,
+        "direction": "down",
+        "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 4500,
-        "streamChange": 5635
+        "previousStreams": 10135,
+        "streamChange": -3600
       },
       {
         "country": "BY",
         "type": "daily",
-        "rank": 6,
-        "previousRank": 61,
+        "rank": 16,
+        "previousRank": 6,
         "peakRank": 3,
-        "appearances": 707,
-        "streams": "4620",
+        "appearances": 708,
+        "streams": "3353",
         "track": "Like Crazy",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e022b46078245d0120690eb560d",
-        "rankChange": 55,
-        "direction": "up",
-        "entryStatus": "MOVED_UP",
+        "rankChange": 10,
+        "direction": "down",
+        "entryStatus": "MOVED_DOWN",
         "songGroup": "FACE",
-        "previousStreams": 2298,
-        "streamChange": 2322
+        "previousStreams": 4620,
+        "streamChange": -1267
       },
       {
         "country": "BY",
         "type": "daily",
-        "rank": 9,
-        "previousRank": 73,
+        "rank": 37,
+        "previousRank": 9,
         "peakRank": 4,
-        "appearances": 544,
-        "streams": "4203",
+        "appearances": 545,
+        "streams": "2761",
         "track": "Rebirth (Intro)",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 64,
-        "direction": "up",
-        "entryStatus": "MOVED_UP",
-        "songGroup": "MUSE",
-        "previousStreams": 2136,
-        "streamChange": 2067
-      },
-      {
-        "country": "BY",
-        "type": "daily",
-        "rank": 95,
-        "previousRank": -1,
-        "peakRank": 5,
-        "appearances": 473,
-        "streams": "1862",
-        "track": "Slow Dance (feat. Sofia Carson)",
-        "artists": [
-          "Jimin",
-          "Sofia Carson"
-        ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 96,
+        "rankChange": 28,
         "direction": "down",
-        "entryStatus": "RE_ENTRY",
-        "songGroup": "FEATURE",
-        "previousStreams": 0,
-        "streamChange": 1862
+        "entryStatus": "MOVED_DOWN",
+        "songGroup": "MUSE",
+        "previousStreams": 4203,
+        "streamChange": -1442
       },
       {
         "country": "CL",
@@ -606,8 +585,8 @@
         "rank": 1,
         "previousRank": 1,
         "peakRank": 1,
-        "appearances": 740,
-        "streams": "268371",
+        "appearances": 741,
+        "streams": "272847",
         "track": "Who",
         "artists": [
           "Jimin"
@@ -617,68 +596,68 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 204866,
-        "streamChange": 63505
+        "previousStreams": 268371,
+        "streamChange": 4476
       },
       {
         "country": "CR",
         "type": "daily",
-        "rank": 21,
-        "previousRank": 42,
+        "rank": 13,
+        "previousRank": 21,
         "peakRank": 1,
-        "appearances": 740,
-        "streams": "14348",
+        "appearances": 741,
+        "streams": "17238",
         "track": "Who",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 21,
+        "rankChange": 8,
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 12012,
-        "streamChange": 2336
+        "previousStreams": 14348,
+        "streamChange": 2890
       },
       {
         "country": "CZ",
         "type": "daily",
-        "rank": 119,
-        "previousRank": -1,
+        "rank": 123,
+        "previousRank": 119,
         "peakRank": 1,
-        "appearances": 438,
-        "streams": "12532",
+        "appearances": 439,
+        "streams": "12356",
         "track": "Who",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 120,
+        "rankChange": 4,
         "direction": "down",
-        "entryStatus": "RE_ENTRY",
+        "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 0,
-        "streamChange": 12532
+        "previousStreams": 12532,
+        "streamChange": -176
       },
       {
         "country": "JP",
         "type": "daily",
-        "rank": 62,
-        "previousRank": 89,
+        "rank": 57,
+        "previousRank": 62,
         "peakRank": 1,
-        "appearances": 740,
-        "streams": "86913",
+        "appearances": 741,
+        "streams": "93744",
         "track": "Who",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 27,
+        "rankChange": 5,
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 73487,
-        "streamChange": 13426
+        "previousStreams": 86913,
+        "streamChange": 6831
       },
       {
         "country": "KR",
@@ -686,8 +665,8 @@
         "rank": 7,
         "previousRank": 7,
         "peakRank": 1,
-        "appearances": 740,
-        "streams": "58059",
+        "appearances": 741,
+        "streams": "55880",
         "track": "Who",
         "artists": [
           "Jimin"
@@ -697,57 +676,37 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 59138,
-        "streamChange": -1079
+        "previousStreams": 58059,
+        "streamChange": -2179
       },
       {
         "country": "KR",
         "type": "daily",
-        "rank": 55,
+        "rank": 59,
         "previousRank": 55,
         "peakRank": 2,
-        "appearances": 720,
-        "streams": "19823",
+        "appearances": 721,
+        "streams": "19379",
         "track": "Be Mine",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 0,
-        "direction": "same",
-        "entryStatus": "NO_CHANGE",
+        "rankChange": 4,
+        "direction": "down",
+        "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 20723,
-        "streamChange": -900
+        "previousStreams": 19823,
+        "streamChange": -444
       },
       {
         "country": "PY",
         "type": "daily",
-        "rank": 67,
-        "previousRank": -1,
+        "rank": 54,
+        "previousRank": 67,
         "peakRank": 1,
-        "appearances": 704,
-        "streams": "7182",
-        "track": "Who",
-        "artists": [
-          "Jimin"
-        ],
-        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 68,
-        "direction": "down",
-        "entryStatus": "RE_ENTRY",
-        "songGroup": "MUSE",
-        "previousStreams": 0,
-        "streamChange": 7182
-      },
-      {
-        "country": "SG",
-        "type": "daily",
-        "rank": 13,
-        "previousRank": 26,
-        "peakRank": 1,
-        "appearances": 740,
-        "streams": "24277",
+        "appearances": 705,
+        "streams": "8439",
         "track": "Who",
         "artists": [
           "Jimin"
@@ -757,68 +716,88 @@
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 18287,
-        "streamChange": 5990
+        "previousStreams": 7182,
+        "streamChange": 1257
+      },
+      {
+        "country": "SG",
+        "type": "daily",
+        "rank": 10,
+        "previousRank": 13,
+        "peakRank": 1,
+        "appearances": 741,
+        "streams": "27501",
+        "track": "Who",
+        "artists": [
+          "Jimin"
+        ],
+        "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
+        "rankChange": 3,
+        "direction": "up",
+        "entryStatus": "MOVED_UP",
+        "songGroup": "MUSE",
+        "previousStreams": 24277,
+        "streamChange": 3224
       },
       {
         "country": "TH",
         "type": "daily",
-        "rank": 23,
-        "previousRank": 68,
+        "rank": 18,
+        "previousRank": 23,
         "peakRank": 1,
-        "appearances": 740,
-        "streams": "90989",
+        "appearances": 741,
+        "streams": "96414",
         "track": "Who",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 45,
+        "rankChange": 5,
         "direction": "up",
         "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 60007,
-        "streamChange": 30982
+        "previousStreams": 90989,
+        "streamChange": 5425
       },
       {
         "country": "TW",
         "type": "daily",
-        "rank": 16,
-        "previousRank": 25,
+        "rank": 20,
+        "previousRank": 16,
         "peakRank": 1,
-        "appearances": 740,
-        "streams": "33359",
+        "appearances": 741,
+        "streams": "30469",
         "track": "Who",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 9,
-        "direction": "up",
-        "entryStatus": "MOVED_UP",
+        "rankChange": 4,
+        "direction": "down",
+        "entryStatus": "MOVED_DOWN",
         "songGroup": "MUSE",
-        "previousStreams": 29495,
-        "streamChange": 3864
+        "previousStreams": 33359,
+        "streamChange": -2890
       },
       {
         "country": "UY",
         "type": "daily",
-        "rank": 121,
-        "previousRank": 92,
+        "rank": 85,
+        "previousRank": 121,
         "peakRank": 10,
-        "appearances": 595,
-        "streams": "3686",
+        "appearances": 596,
+        "streams": "4627",
         "track": "Who",
         "artists": [
           "Jimin"
         ],
         "image": "https://i.scdn.co/image/ab67616d00001e02f02c451189a709b9a952aaec",
-        "rankChange": 29,
-        "direction": "down",
-        "entryStatus": "MOVED_DOWN",
+        "rankChange": 36,
+        "direction": "up",
+        "entryStatus": "MOVED_UP",
         "songGroup": "MUSE",
-        "previousStreams": 4131,
-        "streamChange": -445
+        "previousStreams": 3686,
+        "streamChange": 941
       },
       {
         "country": "VE",
@@ -826,8 +805,8 @@
         "rank": 2,
         "previousRank": 2,
         "peakRank": 1,
-        "appearances": 715,
-        "streams": "26601",
+        "appearances": 716,
+        "streams": "44456",
         "track": "Who",
         "artists": [
           "Jimin"
@@ -837,8 +816,8 @@
         "direction": "same",
         "entryStatus": "NO_CHANGE",
         "songGroup": "MUSE",
-        "previousStreams": 24769,
-        "streamChange": 1832
+        "previousStreams": 26601,
+        "streamChange": 17855
       }
     ],
     "weekly": [
